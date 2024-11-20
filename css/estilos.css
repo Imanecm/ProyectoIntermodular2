@@ -1,7 +1,18 @@
-
-h1 {
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, rgb(27, 24, 25), transparent),url(../imagenes/fondonegro.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
     font-family: fantasy;
-    color: #9714a3;
+    height: 100vh;
+    align-items: center; 
+    justify-content: center; 
+}
+h2 {
+    font-family: fantasy;
+    color: #f5f2f5;
     font-size: 50px;
 }
 
