@@ -55,8 +55,8 @@ h2 {
     display : flex;
     align-items: center;
     justify-content: center;
-    width: 140px;
-    height: 120px;
+    width: 100px;
+    height: 80px;
     border: 2px solid rgba(209, 198, 202, 0.61);
     color: rgba(226, 218, 221, 0.856);
     border-radius: 90%;
