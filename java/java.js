@@ -1,13 +1,3 @@
-let nombre = 'Alex';
-let apellido = 'Prada';
-let saludo = nombre.concat(apellido);
-
-document.write('Nombre: ' + nombre);
-document.write('<br>');
-document.write('Apellido: ' + apellido);
-document.write('<br>');
-document.write(saludo);
-
 function currenTime() {
     //CurrenTime se refiere a hora actual.
     let date = new Date();
