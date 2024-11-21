@@ -62,8 +62,8 @@ h2 {
     border-radius: 90%;
     /*Estos dos de abajo son para redondear mas el circulo o dejarlo como etiqueta
     ahora está como "etiqueta */
-    border-top-right-radius: 30%;
-    border-top-left-radius: 30%;
+    /*border-top-right-radius: 30%;
+    border-top-left-radius: 30%;*/
     font-family: monospace;
     font-size: 1.7rem;
   }
