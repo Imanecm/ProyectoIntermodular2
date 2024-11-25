@@ -25,3 +25,5 @@ document.querySelectorAll('.service').forEach(service => {
     alert(`Has seleccionado: ${service.querySelector('.servicios-text').textContent}`);
   });
 });
+
+
