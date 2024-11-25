@@ -8,9 +8,9 @@
     color: #f5f5f5;
   }
   #indice {
-    background-color: #242221;
+    background-color: #ffffff;
     color: white;
-    padding: 15px;
+    padding: 25px;
     position: fixed; /* Fija el índice en la parte superior */
     top: 0;
     left: 0;
@@ -18,10 +18,12 @@
     width: 100%;
     z-index: 2000; /* Asegura que el índice esté por encima de otros elementos */
     box-shadow: 0 2px 5px rgba(197, 67, 106, 0.2);
-    
-   
   }
-
+  #logotipo {
+    height: 100px; /* Ajusta el tamaño del logotipo según sea necesario */
+    width: auto; /* Mantiene la proporción del logotipo */
+    margin-right: 20px; /* Espacio entre el logotipo y el texto u otros elementos */
+  }
   
   .web-agency {
     text-align: center;
