@@ -8,16 +8,23 @@
     color: #f5f5f5;
   }
   #indice {
-    background-color: #ffffff;
-    color: white;
+    background-image: url('../imagenes/imagencabecera.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir el área */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Asegura que el texto sea legible sobre la imagen */
     padding: 25px;
     position: fixed; /* Fija el índice en la parte superior */
     top: 0;
     left: 0;
-    height: 30px;
+    height: 100px; /* Ajusta la altura del índice según tu imagen */
     width: 100%;
     z-index: 2000; /* Asegura que el índice esté por encima de otros elementos */
     box-shadow: 0 2px 5px rgba(197, 67, 106, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Centra el texto */
   }
   #logotipo {
     height: 100px; /* Ajusta el tamaño del logotipo según sea necesario */
