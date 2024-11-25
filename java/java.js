@@ -19,3 +19,9 @@ function currenTime() {
     horaActual.innerHTML = time;
 }
 setInterval(currenTime, 1000);
+
+document.querySelectorAll('.service').forEach(service => {
+    service.addEventListener('click', () => {
+      alert(`Has seleccionado: ${service.querySelector('.service-text').textContent}`);
+    });
+  });
