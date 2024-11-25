@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-</head>
-<body>
-    
-    <img src="../imagenes/Logotipo.png" alt="Logotipo">
     <style>
         body {
             margin: auto;
@@ -12,14 +9,36 @@
             justify-content: center;
             align-items: center;
             background-color: beige;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            padding: auto;
         }
+
         img:hover {
             max-width: 100%;
             height: auto;
             cursor: pointer;
             transform: scale(1.1);
             transition: 1.3s;
+            margin-bottom: 20 px; /*Separación entre la foto y el texto de debajo*/
+        }
+
+        p {
+            font-size: 24px;
+            /*font-family: Montserrat, sans-serif;*/
+            line-height: 1.5px;
+            display: flex;
         }
     </style>
+</head>
+<body>
+    <a href="../index.html">
+    <img src="../imagenes/Logotipo.png" alt="Logotipo"></a>
+    <p>Este es nuestro logo, nos llamamos Development Project y esta es nuestra parte de Información.</p>
+    <p>Aquí podrás encontrar mucha variedad de información que puede que te sea útil, así que, ¡no te olvides de nosotros!
+    </p>
+
 </body>
+
 </html>
