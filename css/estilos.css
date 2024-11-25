@@ -13,23 +13,22 @@
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: center; /* Centra la imagen */
     color: white; /* Asegura que el texto sea legible sobre la imagen */
-    padding: 25px;
+    padding: 10px 25px; /* Ajusta el padding */
     position: fixed; /* Fija el índice en la parte superior */
     top: 0;
     left: 0;
-    height: 100px; /* Ajusta la altura del índice según tu imagen */
+    height: 100px; /* Altura de la cabecera */
     width: 100%;
     z-index: 2000; /* Asegura que el índice esté por encima de otros elementos */
     box-shadow: 0 2px 5px rgba(197, 67, 106, 0.2);
     display: flex;
-    align-items: center;
-    justify-content: center; /* Centra horizontalmente el contenido */
-    text-align: center; /* Centra el texto */
-  }
-  #logotipo {
-    height: 100px; /* Ajusta el tamaño del logotipo según sea necesario */
-    width: auto; /* Mantiene la proporción del logotipo */
-    margin-right: 20px; /* Espacio entre el logotipo y el texto u otros elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+#logotipo {
+    height: 40px; /* Reduce el tamaño del logotipo */
+    width: auto; /* Mantén la proporción del logotipo */
+    margin-right: 20px; /* Espacio entre el logotipo y el título */
   }
   #horaActual {
     display: flex;
