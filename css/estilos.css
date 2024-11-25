@@ -25,7 +25,7 @@ body {
 #logotipo {
     height: 120px; /* Reduce el tamaño del logotipo */
     width: auto; /* Mantén la proporción del logotipo */
-    margin-right: 70px; /* Espacio entre el logotipo y el título */
+    margin-right: 500px; /* Espacio entre el logotipo y el título */
     margin-top: 0%;
   }
   #horaActual {
@@ -47,7 +47,7 @@ body {
     font-family: Montserrat, sans-serif; 
     display: flex;
   }
-  .web-agency {
+  .introduccion {
     text-align: center;
     padding: 30px;
   }
