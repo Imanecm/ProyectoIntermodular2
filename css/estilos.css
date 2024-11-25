@@ -24,6 +24,27 @@
     width: auto; /* Mantiene la proporción del logotipo */
     margin-right: 20px; /* Espacio entre el logotipo y el texto u otros elementos */
   }
+  #horaActual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 70px;
+    color: rgba(0, 0, 0, 0.856);
+    font-family: monospace;
+    font-size: 1.7rem;
+    margin-left: auto; /* Empuja el reloj hacia la derecha */
+}
+  h1.primero {
+    color: rgb(0, 0, 0);
+    text-align: center;    /* Centra el texto */
+    margin-top: 35px;      /* Asegura que no se superponga con el índice */
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+  }
+  
+  
   
   .web-agency {
     text-align: center;
@@ -68,7 +89,7 @@
   }
   
   .service:hover img {
-    filter: grayscale(0%);
+    filter:blur(100%)
   }
   
   .service-text {
@@ -76,9 +97,9 @@
     bottom: 10px;
     left: 10px;
     font-size: 18px;
-    color: #7b0f96;
+    color: #ffffff;
     background: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
+    padding: 5px;
     border-radius: 5px;
   }
 
