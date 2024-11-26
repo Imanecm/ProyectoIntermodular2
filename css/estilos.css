@@ -3,7 +3,6 @@ body {
   background-color: #1c1c1c;
   color: #ffffff;
 }
-
 #indice {
   background-image: url('../imagenes/imagencabecera2.jpg');
   /* Ruta de la imagen de fondo */
@@ -32,11 +31,8 @@ body {
 
 #logotipo {
   height: 120px;
-  
   width: auto;
-  
   margin-right: 500px;
-  
   margin-top: 0%;
 }
 
