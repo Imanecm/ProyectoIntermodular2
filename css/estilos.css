@@ -127,3 +127,48 @@ body {
   padding: 5px;
   border-radius: 5px; */
 }
+.titulo {
+  color: rgb(247, 242, 242);
+  font-size: 40px;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  text-align: center;
+
+}
+
+.contenedor1SP {
+  background-color: #4e4a53;
+  display: flex; /* Activa el modelo Flexbox */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Espacia los elementos horizontalmente */
+  padding: 20px; /* Espaciado interno para el contenedor */
+  gap: 10px; /* Espacio entre la imagen y el texto */
+}
+.contenedor-imagen {
+  flex: 1; /* Ocupa una parte proporcional del contenedor */
+  max-width: 50%; /* Limita el ancho máximo de la imagen */
+}
+.contenedor-imagen img {
+  width: 70%; /* Hace la imagen responsiva */
+  height: auto; /* Mantiene las proporciones */
+}
+.Contenedor1SP-texto {
+  flex: 1; /* El texto también ocupa una parte proporcional */
+  max-width: 50%; /* Limita el ancho máximo */
+  font-family: Montserrat, sans-serif;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .contenedor1SP {
+    flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos en columnas */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  .contenedor-imagen , .Contenedor1SP-texto {
+    max-width: 100%; /* Ocupan todo el ancho en pantallas pequeñas */
+  }
+}
