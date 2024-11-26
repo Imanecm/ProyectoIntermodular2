@@ -171,3 +171,10 @@ body {
     max-width: 100%; /* Ocupan todo el ancho en pantallas pequeñas */
   }
 }
+p {
+  font-size: 24px;
+  font-family: Montserrat, sans-serif;
+  line-height: 40px;
+  display: flex;
+  margin: 20px;
+}
