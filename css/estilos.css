@@ -182,7 +182,6 @@ body {
   padding: 100px;
   gap: 0px;
 }
-/PARTE ALEX DIV CONTENEDORES/
 #contenedorColorDS{
   background-color: #333;
   display: flex; /* Activa el modelo Flexbox */
