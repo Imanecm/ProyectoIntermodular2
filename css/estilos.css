@@ -138,7 +138,13 @@ body {
 }
 
 .contenedor1SP {
-  
+  display: flex; /* Activa el modelo Flexbox */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Espacia los elementos horizontalmente */
+  padding: 20px; /* Espaciado interno para el contenedor */
+  gap: 0px; /* Espacio entre la imagen y el texto */
+}
+#ContenedorNoColorDS{
   display: flex; /* Activa el modelo Flexbox */
   align-items: center; /* Centra verticalmente los elementos */
   justify-content: space-between; /* Espacia los elementos horizontalmente */
@@ -175,6 +181,14 @@ body {
   }
 }
 .contenedor2SP {
+  background-color: #333;
+  display: flex; /* Activa el modelo Flexbox */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Espacia los elementos horizontalmente */
+  padding: 20px; /* Espaciado interno para el contenedor */
+  gap: 0px; /* Espacio entre la imagen y el texto */
+}
+#ContenedorSiColorDS{
   background-color: #333;
   display: flex; /* Activa el modelo Flexbox */
   align-items: center; /* Centra verticalmente los elementos */
