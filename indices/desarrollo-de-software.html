@@ -6,6 +6,37 @@
     <link rel="stylesheet" href="../java/java.js">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>ProyectoIntermodular</title>
+    <style>
+        p {
+            line-height: 2em;
+            font-size: 1.2em;
+        }
+
+        li {
+            line-height: 2em;
+            font-size: 18px;
+        }
+
+        #imgDIV {
+            width: 30%;
+            height: 30%;
+            display: flex;
+            padding-left: 40%;
+            margin-top: 1.5em;
+        }
+
+        #imgCodigoFuente {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            padding-right: 10%;
+            margin-top: 1.5em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,20 +61,90 @@
 
         <h1 class="titulo">El Desarrollo Software</h1>
         <p> Empezaremos hablando sobre lo que engloba el desarrollo software, que entendemos como proceso de diseñar,
-            crear, implementar y mantener aplicaciones o sistemas informáticos. Es decir, engloba lo que sería una 
+            crear, implementar y mantener aplicaciones o sistemas informáticos. Es decir, engloba lo que sería una
             idea hasta la entrega del producto funcional y su evolución con el paso del tiempo</p>
-            
-            <div id="contenedorColorDS">
-                 
-                    <img id="imgContendorDS" src="../imagenes/desarrollo software.png" alt="Foto de una pantalla con codigo de desarrollo software">
-               
 
-                <div id="contenedorTextoColorDS">
-                    <p>Para el concepto de software podemos decir que es un conjunto de instrucciones, datos o programas que permiten que un Sistema Informatico haga tareas especificas, es decir, es la parte intangible de un S.I.
-                        Hay diferentes clasificaciones:
-                    </p>
-                </div>
+        <!-- PRIMER CONTENEDOR CONCEPTO SOFTWARE-->
+        <div id="contenedorColorDS">
+
+            <img id="imgContendorDS" src="../imagenes/software1.png"
+                alt="Foto de una pantalla con codigo de desarrollo software">
+
+
+            <div id="contenedorTextoDSNorm">
+                <p>Para el concepto de software podemos decir que es un conjunto de instrucciones, datos o programas
+                    que permiten que un Sistema Informatico haga tareas especificas, es decir, es la parte intangible de
+                    un S.I.
+                </p>
+                <br>
+                <p>Hay diferentes clasificaciones:</p>
+                <ol>
+                    <li><b>Software de sistema:</b> lo que entendemos por Sistema Operativo, ya que se gestiona y
+                        controla los recursos hardware.</li>
+                    <img id="imgDIV" src="../imagenes/softwareSistema.png" alt="Se ven distintos Sistemas Operativos">
+                    <br>
+                    <br>
+                    <li><b>Software de aplicación:</b> son “aplicaciones” que son creadas para realizar algo de manera
+                        especifica, como procesadores de texto,
+                        navegadores web, etc.</li>
+                    <img id="imgDIV" src="../imagenes/softwareAplicacion.png" alt="">
+                    <br>
+                    <br>
+                    <li><b>Software de desarrollo:</b> son las herramientas que usamos nosotros los programadores para
+                        crear, depurar y mantener otros programas,
+                        ya sean compiladores o entornos de desarrollo integrados (IDEs).</li>
+                </ol>
             </div>
+        </div>
+        <!-- SEGUNDO CONTENEDOR Código fuente, objeto y ejecutable-->
+        <h1 class="titulo">Códigos</h1>
+        <div id="contenedorDS">
+
+            <img id="imgCodigoFuente" src="../imagenes/codigoFuente.png" alt="Imagen de una foto de un codigo fuente">
+
+            <div id="contenedorTextoDSInvert">
+                <h2>Código Fuente</h2>
+                <p>
+                    Empezaré hablando sobre el codigo fuente ya que muchas instrucciones agrupadas escritas por un
+                    programador
+                    en algún lenguaje de programación, y hay muchos, como pueden serlo mas conocidos/ importantes,
+                    Python, Java o C++.
+                </p>
+                <p>
+                    Podemos decir el código fuente es:
+                </p>
+                <ul>
+                    <li>Editable y legible para desarrolladores ( dar ejemplo de que es nuestra manera de tener una
+                        relacion mas cercana
+                        con el sistema informático)</li>
+                    <li>Utilizado para definir la lógica y funcionalidades del programa.</li>
+                    <li>Entrada para los procesos de compilación o interpretación.</li>
+                </ul>
+                <p>Esto esencial porque es la el intermediario entre el lenguaje de programacion y nuestro lenguaje.</p>
+                <h2>Código Objeto</h2>
+                <p>
+                    Es la representacion generada al compilar el código fuente. Compuesto por instruccion pero en
+                    lenguaje de máquina,
+                    (aún no esta listo para ejecutarse).
+                </p>
+                <p><b>Se representa en binario (0110 1101).</b></p>
+                <p>Lo principal del código fuente es:</p>
+                <ul>
+                    <li>Que es específico para entender el hardware y sistema operativo que es donde se ejcutará.</li>
+                    <li>Dificil de leer por los humanos.</li>
+                    <li>Puede incluir referencia a librerias externas, esto lo vereos en el siguiente código.</li>
+                </ul>
+                <p>Para que el programa sea ejecutable, primero deberemos tener estos pasos, ensamblado, enlazado y
+                    carga.
+                </p>
+                <h2>Código Ejecutable</h2>
+                <p>
+                    Este es el producto final para ser ejecutado por el sistema operativo. Es el resultado de los dos
+                    códigos anteriores con todas las librerías para que funcione. Lo usará el usuario final para
+                    interactuar con el programa.
+                </p>
+            </div>
+        </div>
 
 
 
