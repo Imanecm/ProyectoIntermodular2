@@ -235,4 +235,5 @@ p {
   line-height: 40px;
   display: flex;
   margin: 20px;
+  padding: auto;
 }
