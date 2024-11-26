@@ -1,10 +1,8 @@
-
 body {
   font-family: Montserrat, sans-serif;
   background-color: #1c1c1c;
-  color: #fdfdfd;
+  color: #ffffff;
 }
-
 #indice {
   background-image: url('../imagenes/imagencabecera2.jpg');
   /* Ruta de la imagen de fondo */
@@ -24,6 +22,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 2000;
+  
   box-shadow: 0 2px 5px rgba(197, 67, 106, 0.2);
   display: flex;
   align-items: center;
@@ -32,16 +31,8 @@ body {
 
 #logotipo {
   height: 120px;
-<<<<<<< HEAD
-  
-  width: auto;
-  
-  margin-right: 500px;
-  
-=======
   width: auto;
   margin-right: 500px;
->>>>>>> f2c9ce925569d692a41aa2d5dca6a9efeb60359d
   margin-top: 0%;
 }
 
