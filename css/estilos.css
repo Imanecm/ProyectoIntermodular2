@@ -1,3 +1,4 @@
+CSS
 body {
   font-family: Montserrat, sans-serif;
   background-color: #1c1c1c;
@@ -139,15 +140,12 @@ body {
 }
 
 .contenedor1SP {
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  gap: 0px;
-  /*espacio entre imagen y texto*/
+  display: flex; /* Activa el modelo Flexbox */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Espacia los elementos horizontalmente */
+  padding: 20px; /* Espaciado interno para el contenedor */
+  gap: 0px; /* Espacio entre la imagen y el texto */
 }
-
 .contenedor-imagen {
   order: 1;
   flex: 1;
@@ -189,7 +187,21 @@ body {
   padding: 100px;
   gap: 0px;
 }
-
+/PARTE ALEX DIV CONTENEDORES/
+#contenedorColorDS{
+  background-color: #333;
+  display: flex; /* Activa el modelo Flexbox */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Espacia los elementos horizontalmente */
+  padding: 20px; /* Espaciado interno para el contenedor */
+  gap: 0px; /* Espacio entre la imagen y el texto */
+}
+#imgContendorDS  {
+  order: 2;
+  flex: 1;
+  width: 60%;
+  height: auto;
+}
 .contenedor-imagen {
   order: 2;
   flex: 1;
