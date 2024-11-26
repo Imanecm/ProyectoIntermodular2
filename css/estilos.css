@@ -1,3 +1,4 @@
+CSS
 body {
   font-family: Montserrat, sans-serif;
   background-color: #1c1c1c;
@@ -23,7 +24,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 2000;
-  /* Asegura que el índice esté por encima de otros elementos */
+  
   box-shadow: 0 2px 5px rgba(197, 67, 106, 0.2);
   display: flex;
   align-items: center;
@@ -32,11 +33,8 @@ body {
 
 #logotipo {
   height: 120px;
-  /* Reduce el tamaño del logotipo */
   width: auto;
-  /* Mantén la proporción del logotipo */
   margin-right: 500px;
-  /* Espacio entre el logotipo y el título */
   margin-top: 0%;
 }
 
@@ -59,7 +57,7 @@ body {
   text-align: right;
   /* Centra el texto */
   margin-top: 25px;
-  /* Asegura que no se superponga con el índice */
+
   font-size: 50px;
   font-family: Montserrat, sans-serif;
   display: flex;
@@ -71,7 +69,7 @@ body {
 }
 
 #imagenesPortada:hover {
- transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .web-agency h2 {
@@ -113,7 +111,7 @@ body {
 
 .servicio:hover img {
   filter: grayscale(100%);
-  /* Vuelve a color al pasar el ratón */
+  /* vuelve a color al pasar el ratón */
 }
 
 .service-text {
@@ -126,48 +124,117 @@ body {
   padding: 5px;
   border-radius: 5px; */
 }
+
 .titulo {
   color: rgb(247, 242, 242);
   font-size: 40px;
   font-family: Montserrat, sans-serif;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
 }
 
 .contenedor1SP {
-  background-color: #4e4a53;
   display: flex; /* Activa el modelo Flexbox */
   align-items: center; /* Centra verticalmente los elementos */
   justify-content: space-between; /* Espacia los elementos horizontalmente */
   padding: 20px; /* Espaciado interno para el contenedor */
-  gap: 10px; /* Espacio entre la imagen y el texto */
+  gap: 0px; /* Espacio entre la imagen y el texto */
 }
 .contenedor-imagen {
-  flex: 1; /* Ocupa una parte proporcional del contenedor */
-  max-width: 50%; /* Limita el ancho máximo de la imagen */
+  order: 1;
+  flex: 1;
+  max-width: 50%;
 }
+
 .contenedor-imagen img {
-  width: 70%; /* Hace la imagen responsiva */
-  height: auto; /* Mantiene las proporciones */
+  width: 70%;
+  height: auto;
 }
+
 .Contenedor1SP-texto {
-  flex: 1; /* El texto también ocupa una parte proporcional */
-  max-width: 50%; /* Limita el ancho máximo */
+  order: 2;
+  flex: 1;
+  max-width: 50%;
   font-family: Montserrat, sans-serif;
-  font-size: 25px;
+  font-size: 15px;
+
 }
 
 @media (max-width: 768px) {
   .contenedor1SP {
-    flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
-    align-items: center; /* Centra los elementos en columnas */
-    text-align: center; /* Alinea el texto al centro */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .contenedor-imagen , .Contenedor1SP-texto {
-    max-width: 100%; /* Ocupan todo el ancho en pantallas pequeñas */
+  .contenedor-imagen,
+  .Contenedor1SP-texto {
+    max-width: 100%;
   }
+}
+
+.contenedor2SP {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  gap: 0px;
+}
+/PARTE ALEX DIV CONTENEDORES/
+#contenedorColorDS{
+  background-color: #333;
+  display: flex; /* Activa el modelo Flexbox */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Espacia los elementos horizontalmente */
+  padding: 20px; /* Espaciado interno para el contenedor */
+  gap: 0px; /* Espacio entre la imagen y el texto */
+}
+#imgContendorDS  {
+  order: 2;
+  flex: 1;
+  width: 60%;
+  height: auto;
+}
+.contenedor-imagen {
+  order: 2;
+  flex: 1;
+  max-width: 50%;
+}
+
+.contenedor-imagen img {
+  width: 70%;
+  height: auto;
+}
+
+.Contenedor2SP-texto {
+  order: 1;
+  flex: 1;
+  max-width: 50%;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .contenedor2SP {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenedor-imagen,
+  .Contenedor2SP-texto {
+    max-width: 100%;
+  }
+}
+
+p {
+  font-size: 24px;
+  font-family: Montserrat, sans-serif;
+  line-height: 40px;
+  display: flex;
+  margin: 20px;
 }
