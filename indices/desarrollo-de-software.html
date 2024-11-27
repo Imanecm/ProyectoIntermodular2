@@ -26,8 +26,8 @@
         }
 
         #imgCodigoFuente {
-            width: 50%;
-            height: 50%;
+            width: 70%;
+            height: 70%;
             display: flex;
             padding-right: 10%;
             margin-top: 1.5em;
@@ -49,7 +49,7 @@
             <img src="../imagenes/Logotipo.png" id="logotipo" alt="Logotipo">
 
             <a class="primero" href="../index.html">
-                <h1 class="text-shadow-pop-tr">Development Project</h1>
+        <h1 class="text-shadow-pop-tr">El Desarrollo Software</h1>
             </a>
 
             <div id="horaActual" style="display: flex; align-items: center;"></div>
@@ -65,13 +65,13 @@
             idea hasta la entrega del producto funcional y su evolución con el paso del tiempo</p>
 
         <!-- PRIMER CONTENEDOR CONCEPTO SOFTWARE-->
-        <div id="contenedorColorDS">
-
-            <img id="imgContendorDS" src="../imagenes/software1.png"
+        <div class="contenedor1">
+            <div class="contenedor-imagen">
+            <img src="../imagenes/software1.png"
                 alt="Foto de una pantalla con codigo de desarrollo software">
+            </div>
 
-
-            <div id="contenedorTextoDSNorm">
+            <div class="Contenedor1-texto">
                 <p>Para el concepto de software podemos decir que es un conjunto de instrucciones, datos o programas
                     que permiten que un Sistema Informatico haga tareas especificas, es decir, es la parte intangible de
                     un S.I.
@@ -97,12 +97,12 @@
             </div>
         </div>
         <!-- SEGUNDO CONTENEDOR Código fuente, objeto y ejecutable-->
-        <h1 class="titulo">Códigos</h1>
-        <div id="contenedorDS">
-
-            <img id="imgCodigoFuente" src="../imagenes/codigoFuente.png" alt="Imagen de una foto de un codigo fuente">
-
-            <div id="contenedorTextoDSInvert">
+        <div class="contenedor2">
+            <div class="contenedor-imagen">
+            <img id="imgConte" src="../imagenes/codigoFuente.png" alt="Imagen de una foto de un codigo fuente">
+        </div>
+            <div class="Contenedor2-texto">
+                <h1 class="titulo">Códigos</h1>
                 <h2>Código Fuente</h2>
                 <p>
                     Empezaré hablando sobre el codigo fuente ya que muchas instrucciones agrupadas escritas por un
@@ -135,7 +135,7 @@
                     <li>Puede incluir referencia a librerias externas, esto lo vereos en el siguiente código.</li>
                 </ul>
                 <p>Para que el programa sea ejecutable, primero deberemos tener estos pasos, ensamblado, enlazado y
-                   carga.
+                    carga.
                 </p>
                 <h2>Código Ejecutable</h2>
                 <p>
@@ -143,13 +143,9 @@
                     códigos anteriores con todas las librerías para que funcione. Lo usará el usuario final para
                     interactuar con el programa.
                 </p>
-                <p>Un claro ejemplo podríamos decir que sería &nbsp;<i>calculadora.exe</i></p>
             </div>
         </div>
-        <!--PARTE DE LENGUAJESS DE PROGRAMACION-->
-        <div>
-            <h1 >Lenguajes de programación</h1>
-        </div>
+
 
 
 
@@ -174,23 +170,6 @@
             de un entorno virtualizado.
             Básicamente es un ordenador dentro de otro ordenador. 
         </p>
-        <ul>
-            <li><strong>Aislamiento:</strong> cada maquina funciona de manera independiente, 
-                lo que permite ejecutar diferentes sistemas operativos (Windows, Linux, macOS) en un mismo hardware sin interferencias.</li>
-            <li><strong>Pruebas y desarrollo:</strong> Los desarrolladores pueden probar software en diferentes entornos sin necesidad de
-                múltiples equipos físicos.</li>
-            <li><strong>Optimización de recursos:</strong> Permite usar de manera eficiente los recursos del hardware físico,
-                alojando múltiples VM en una sola máquina.</li>
-            <li><strong>Seguridad:</strong> El aislamiento reduce el riesgo de que una vulnerabilidad en una VM afecte al sistema
-                anfitrión o a otras VMs.</li>
-            <li><strong>Compatibilidad</strong> </li>
-            <li></li>
-            <li></li>
-        </ul>
-
-
-
-
 
         <script type="text/javascript" src="./java/java.js"></script>
 </body>
