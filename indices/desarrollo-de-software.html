@@ -49,9 +49,8 @@
             <img src="../imagenes/Logotipo.png" id="logotipo" alt="Logotipo">
 
             <a class="primero" href="../index.html">
-        <h1 class="text-shadow-pop-tr">El Desarrollo Software</h1>
+                <h1 class="text-shadow-pop-top">Development Project</h1>
             </a>
-
             <div id="horaActual" style="display: flex; align-items: center;"></div>
         </div>
         <!-- ALEX -->
@@ -63,12 +62,11 @@
         <p> Empezaremos hablando sobre lo que engloba el desarrollo software, que entendemos como proceso de diseñar,
             crear, implementar y mantener aplicaciones o sistemas informáticos. Es decir, engloba lo que sería una
             idea hasta la entrega del producto funcional y su evolución con el paso del tiempo</p>
-
+            <div class="separadorDeTema"></div>
         <!-- PRIMER CONTENEDOR CONCEPTO SOFTWARE-->
         <div class="contenedor1">
             <div class="contenedor-imagen">
-            <img src="../imagenes/software1.png"
-                alt="Foto de una pantalla con codigo de desarrollo software">
+                <img src="../imagenes/software1.png" alt="Foto de una pantalla con codigo de desarrollo software">
             </div>
 
             <div class="Contenedor1-texto">
@@ -99,8 +97,9 @@
         <!-- SEGUNDO CONTENEDOR Código fuente, objeto y ejecutable-->
         <div class="contenedor2">
             <div class="contenedor-imagen">
-            <img id="imgCodigoFuente" src="../imagenes/codigoFuente.png" alt="Imagen de una foto de un codigo fuente">
-        </div>
+                <img id="imgCodigoFuente" src="../imagenes/codigoFuente.png"
+                    alt="Imagen de una foto de un codigo fuente">
+            </div>
             <div class="Contenedor2-texto">
                 <h1 class="titulo">Códigos</h1>
                 <h2>Código Fuente</h2>
@@ -145,7 +144,44 @@
                 </p>
             </div>
         </div>
+        <!--LENGUAJES DE PROGRAMACIÓN-->
+        <div class="contenedor1">
+            <div>
+                <img src="../imagenes/lenguajesDeProgramacion.png"
+                    alt="Muestra los lenguajes de programación más conocidos">
+            </div>
+            <div class="Contenedor1-texto">
+                <h1 class="titulo">Lenguajes de programación</h1>
+                <p>Los lenguajes de programación tienen todos algo en común y es que, son instrucciones de los programas
+                    que ha de ejecutar el ordenador para resolver algún tipo de problema.
+                </p>
+                <p>Los elementos básicos que se recogen en todos los lenguajes de programación son estos:</p>
+                <ul>
+                    <li><strong>Identificadores</strong> nombre simbólicos, que damos a algunos elementos de
+                        programación, como son variables, tipos, módulos, etc</li>
+                    <li><strong>Constantes</strong> son datos que no cambian su valor en el programa, a no ser, que
+                        nosotros
+                        queramos modificarlo pero sirve justamente para no ir cambiando todo a mano.
+                    </li>
+                    <li><strong>Operadores</strong> símbolos que muestran operaciones entre variables, constantes, etc.
+                        (suma (+), resta (-)...).</li>
+                    <li><strong>Instrucciones</strong> símbolos especiales que representan estructuras de procesamiento
+                        y
+                        de definición de elementos de programación y lo hace de manera consecutiva.
+                    </li>
+                    <li><strong>Comentarios</strong>se utiliza normalmente para ayudarte a guiarte en el programa,
+                        <i>(porque seamos sinceros, si pasan 2 dias ¿sabes que hace no?, pero ¿y si lo dejas 1 mes y lo
+                            tienes
+                            que reusar o cualquier otra cosa, te acordarías? No, por lo tanto se utiliza para saber que
+                            se va
+                            realizando en el programa).
+                        </i>
+                    </li>
+                </ul>
 
+            </div>
+        </div>
+        <div class="separadorColor"></div>
 
 
 
@@ -165,25 +201,34 @@
         <br></br>
         <!--PRIMER APARTADO -->
         <h1 class="titulo">Maquina Virtual y su utilidad</h1>
-        <p> Una máquina virtual es un software que emula un sistema informático completo, incluyendo el hardware y el SO.
-            Ejecuta un SO y sus aplicaciones como si estuvieran en una máquina física, pero realmente está funcionando dentro
+        <p> Una máquina virtual es un software que emula un sistema informático completo, incluyendo el hardware y el
+            SO.
+            Ejecuta un SO y sus aplicaciones como si estuvieran en una máquina física, pero realmente está funcionando
+            dentro
             de un entorno virtualizado.
-            Básicamente es un ordenador dentro de otro ordenador. 
+            Básicamente es un ordenador dentro de otro ordenador.
         </p>
         <ul>
-            <li><strong>Aislamiento:</strong> cada maquina funciona de manera independiente, 
-                lo que permite ejecutar diferentes sistemas operativos (Windows, Linux, macOS) en un mismo hardware sin interferencias.</li>
-            <li><strong>Pruebas y desarrollo:</strong> Los desarrolladores pueden probar software en diferentes entornos sin necesidad de
+            <li><strong>Aislamiento:</strong> cada maquina funciona de manera independiente,
+                lo que permite ejecutar diferentes sistemas operativos (Windows, Linux, macOS) en un mismo hardware sin
+                interferencias.</li>
+            <li><strong>Pruebas y desarrollo:</strong> Los desarrolladores pueden probar software en diferentes entornos
+                sin necesidad de
                 múltiples equipos físicos.</li>
-            <li><strong>Optimización de recursos:</strong> Permite usar de manera eficiente los recursos del hardware físico,
+            <li><strong>Optimización de recursos:</strong> Permite usar de manera eficiente los recursos del hardware
+                físico,
                 alojando múltiples VM en una sola máquina.</li>
-            <li><strong>Seguridad:</strong> El aislamiento reduce el riesgo de que una vulnerabilidad en una VM afecte al sistema
+            <li><strong>Seguridad:</strong> El aislamiento reduce el riesgo de que una vulnerabilidad en una VM afecte
+                al sistema
                 anfitrión o a otras VMs.</li>
-            <li><strong>Compatibilidad</strong> Es posible ejecutar aplicaciones que requieren versiones específicas de sistemas operativos
+            <li><strong>Compatibilidad</strong> Es posible ejecutar aplicaciones que requieren versiones específicas de
+                sistemas operativos
                 en máquinas virtuales, incluso si el hardware físico utiliza otro sistema.</li>
-            <li><strong>Facilidad de copia y migración:</strong>  Las VMs pueden clonarse, respaldarse y transferirse entre servidores
+            <li><strong>Facilidad de copia y migración:</strong> Las VMs pueden clonarse, respaldarse y transferirse
+                entre servidores
                 o dispositivos con facilidad.</li>
-            <li><strong>Ahorro de costos:</strong> En lugar de comprar múltiples servidores físicos, las empresas pueden virtualizar
+            <li><strong>Ahorro de costos:</strong> En lugar de comprar múltiples servidores físicos, las empresas pueden
+                virtualizar
                 sus infraestructuras, reduciendo costos de hardware y mantenimiento.</li>
         </ul>
 
@@ -191,22 +236,29 @@
         <br></br>
         <!--SEGUNDO APARTADO -->
         <h2>Razón de ser de la ingeniería del software.</h2>
-        <p>La razón de ser de la ingeniería de software es satisfacer la necesidad de desarrollar sistemas de software de calidad,
-           de forma predecible y eficiente, en un mundo donde el software desempeña un papel esencial en la vida personal y profesional.</p>
+        <p>La razón de ser de la ingeniería de software es satisfacer la necesidad de desarrollar sistemas de software
+            de calidad,
+            de forma predecible y eficiente, en un mundo donde el software desempeña un papel esencial en la vida
+            personal y profesional.</p>
 
         <br></br>
         <!--TERCER APARTADO -->
 
-           <h1 class="titulo">Fases del desarrollo de una aplicación informática.</h1>
-           <ol>
-            <li><strong>Análisis de requisitos</strong> Identificar y documentar las necesidades del cliente o usuario final.</li>
+        <h1 class="titulo">Fases del desarrollo de una aplicación informática.</h1>
+        <ol>
+            <li><strong>Análisis de requisitos</strong> Identificar y documentar las necesidades del cliente o usuario
+                final.</li>
             <li><strong>Diseño</strong> Definir cómo se implementará el software cumpliendo con los requisitos.
-                Incluye el diseño de la arquitectura del sistema, estructuras de datos, interfaces de usuario y algoritmos.</li>
-            <li><strong>Desarrollo o implementación</strong> Construir el software codificando los módulos definidos en el diseño.
-             </li>
-            <li><strong>Pruebas</strong> Identificar y corregir errores para garantizar que el software funcione correctamente.
-                </li>
-            <li><strong>Implementación o despliegue</strong> Instalar y configurar el software en el entorno real de uso.
+                Incluye el diseño de la arquitectura del sistema, estructuras de datos, interfaces de usuario y
+                algoritmos.</li>
+            <li><strong>Desarrollo o implementación</strong> Construir el software codificando los módulos definidos en
+                el diseño.
+            </li>
+            <li><strong>Pruebas</strong> Identificar y corregir errores para garantizar que el software funcione
+                correctamente.
+            </li>
+            <li><strong>Implementación o despliegue</strong> Instalar y configurar el software en el entorno real de
+                uso.
             </li>
             <li><strong>Mantenimiento</strong> Garantizar el correcto funcionamiento del software después de su entrega.
             </li>
@@ -267,17 +319,6 @@
                 (como verificar que el diseño funcione).</li>
             
         </ul>
-
-
-
-
-
-
-
-
-
-        
-
 
         <script type="text/javascript" src="./java/java.js"></script>
 </body>
