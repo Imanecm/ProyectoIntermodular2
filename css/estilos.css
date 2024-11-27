@@ -133,7 +133,7 @@ text-decoration: none;
   text-align: center;
 }
 
-.contenedor1SP {
+.contenedor1 {
   display: flex;
   /* Activa el modelo Flexbox */
   align-items: center;
@@ -157,7 +157,7 @@ text-decoration: none;
   height: auto;
 }
 
-.Contenedor1SP-texto {
+.Contenedor1-texto {
   order: 2;
   flex: 1;
   max-width: 50%;
@@ -179,7 +179,7 @@ text-decoration: none;
   }
 }
 
-.contenedor2SP {
+.contenedor2 {
   background-color: #333;
   display: flex;
   align-items: center;
@@ -251,7 +251,7 @@ text-decoration: none;
   height: auto;
 }
 
-.Contenedor2SP-texto {
+.Contenedor2-texto {
   order: 1;
   flex: 1;
   max-width: 50%;
