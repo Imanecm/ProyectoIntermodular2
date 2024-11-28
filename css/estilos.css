@@ -325,4 +325,13 @@ border-radius: 18px 18px 18px 18px;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.829), 0 0 10px rgba(255, 255, 255, 0.829);
   text-align: center;
 }
+.contenedor-imagen {
+  order: 2;
+  flex: 1;
+  max-width: 50%;
+}
 
+.contenedor-imagen img {
+  width: 70%;
+  height: auto;
+}
