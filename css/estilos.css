@@ -188,7 +188,8 @@ body {
   padding: 100px;
   gap: 0px;
 }
-
+/*estos es para separar un poco con otro color diferente
+normalmente no tendrá nada en su contenido pero puedes agregarselo*/
 .separadorColor {
   background-color: beige;
   display: flex;
@@ -197,6 +198,8 @@ body {
   padding: 50px;
   gap: 0px;
 }
+/*Separa el titulo de principio de tema con el contenido que hay 
+más abajo.*/
 .separadorDeTema {
   background-color: #ffc14e;
   display: flex;
