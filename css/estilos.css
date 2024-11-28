@@ -281,5 +281,11 @@ p {
   }
 }
 
+.textoSP{
+  color: rgb(247, 242, 242);
+  font-size: 20px;
+  font-family: Montserrat, sans-serif;
+  line-height: 2;
+}
 
 
