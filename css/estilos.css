@@ -286,6 +286,43 @@ p {
   font-size: 20px;
   font-family: Montserrat, sans-serif;
   line-height: 2;
+  
+}
+.fondoSP {
+  background-image: url('../imagenes/codigosimagen5.gif');
+  /* Ruta de la imagen de fondo */
+  background-size: cover;
+  /* Ajusta la imagen para cubrir el área */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
+  background-position: center;
+  /* Centra la imagen */
+  color: white;
+  /* Asegura que el texto sea legible sobre la imagen */
+  padding: 10px 25px;
+  /* Ajusta el padding */
+  /* Fija el índice en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+  box-shadow: 0 2px 5px rgba(197, 67, 106, 0.2);
+  display: flex;
+  align-items: center;
+  /* Alinea los elementos verticalmente */
+  border-right: 5px solid #531b1b; /* Cambia el color y el grosor según prefieras */
+  border-left: 5px solid #531b1b;
+  /*css generator*/
+  box-sizing: border-box; 
+  border: 5px double #642d2d;
+border-radius: 18px 18px 18px 18px;
 }
 
+/*css generator*/
+.tituloSP{
+  color: rgba(255, 255, 255, 0.808);
+  background: #1a1a1a;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.829), 0 0 10px rgba(255, 255, 255, 0.829);
+  text-align: center;
+}
 
