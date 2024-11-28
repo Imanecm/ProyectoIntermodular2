@@ -133,10 +133,9 @@ body {
   align-items: center;
   text-align: center;
 }
-
+/*Te deja la imagen a la izquierda y el texto contenedor1-texto a la derecha*/
 .contenedor1 {
   display: flex;
-  /* Activa el modelo Flexbox */
   align-items: center;
   /* Centra verticalmente los elementos */
   justify-content: space-between;
@@ -146,7 +145,7 @@ body {
   gap: 0px;
   /* Espacio entre la imagen y el texto */
 }
-
+/*Va en cualquier contenedor 1/2 pero si se pone imagen se usa*/
 .contenedor-imagen {
   order: 1;
   flex: 1;
@@ -157,7 +156,7 @@ body {
   width: 70%;
   height: auto;
 }
-
+/*Va con contenedor 1*/
 .Contenedor1-texto {
   order: 2;
   flex: 1;
@@ -179,7 +178,7 @@ body {
     max-width: 100%;
   }
 }
-
+/*Te deja la imagen a la derecha y el texto contenedor2-texto a la izquierda*/
 .contenedor2 {
   background-color: #333;
   display: flex;
@@ -216,17 +215,7 @@ más abajo.*/
   height: 40%;
   margin: auto;
 }
-.contenedor-imagen {
-  order: 2;
-  flex: 1;
-  max-width: 50%;
-}
-
-.contenedor-imagen img {
-  width: 70%;
-  height: auto;
-}
-
+/*Va con contenedor 2*/
 .Contenedor2-texto {
   order: 1;
   flex: 1;
