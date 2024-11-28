@@ -151,6 +151,18 @@
                     alt="Muestra los lenguajes de programación más conocidos">
             </div>
             <div class="Contenedor1-texto">
+                <div class="contenedor-acordeon">
+                    <div class="acordeon">
+                        <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                        <label for="btn-acordeon3">
+                            Lenguajes de programación
+                        </label>
+                        <div class="contenido-acordeon">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid amet vero voluptatibus modi
+                                aspernatur commodi quidem cupiditate eum facilis nemo.</p>
+                        </div>
+                    </div>
+                </div>
                 <h1 class="titulo">Lenguajes de programación</h1>
                 <p>Los lenguajes de programación tienen todos algo en común y es que, son instrucciones de los programas
                     que ha de ejecutar el ordenador para resolver algún tipo de problema.
@@ -235,11 +247,51 @@
             <div class="Contenedor2-texto">
                 <p><strong>LENGUAJES DE PROGRAMACIÓN ESTRUCTURADOS
                     </strong></p>
-                    <!-- PREGUNTAR JOSELUIS-->
-                    <p>Son caracterizados por el empleo exclusivo de 3 estructuras para la creación de cualquier programa. <br> Estructura secuencial, alternativa y repetitiva.</p>
+                <!-- PREGUNTAR JOSELUIS-->
+                <p>Son caracterizados por el empleo exclusivo de 3 estructuras para la creación de cualquier programa.
+                    <br> Estructura secuencial, alternativa y repetitiva.</p>
             </div>
         </div>
 
+        <div class="contenedor-acordeon">
+            <h2>Lenguajes de programación</h2>
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+                <label for="btn-acordeon1">
+                    ¿blabla bla?
+                </label>
+                <div class="contenido-acordeon">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid amet vero voluptatibus modi
+                        aspernatur commodi quidem cupiditate eum facilis nemo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-acordeon">
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                <label for="btn-acordeon2">
+                    ¿blabla bla?
+                </label>
+                <div class="contenido-acordeon">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid amet vero voluptatibus modi
+                        aspernatur commodi quidem cupiditate eum facilis nemo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-acordeon">
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                <label for="btn-acordeon3">
+                    ¿blabla bla?
+                </label>
+                <div class="contenido-acordeon">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid amet vero voluptatibus modi
+                        aspernatur commodi quidem cupiditate eum facilis nemo.</p>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -258,41 +310,65 @@
         <br></br>
         <br></br>
         <!--PRIMER APARTADO -->
-        <h1 class="titulo">Maquina Virtual y su utilidad</h1>
-        <p> Una máquina virtual es un software que emula un sistema informático completo, incluyendo el hardware y el
-            SO.
-            Ejecuta un SO y sus aplicaciones como si estuvieran en una máquina física, pero realmente está funcionando
-            dentro
-            de un entorno virtualizado.
-            Básicamente es un ordenador dentro de otro ordenador.
-        </p>
-        <ul>
-            <li><strong>Aislamiento:</strong> cada maquina funciona de manera independiente,
-                lo que permite ejecutar diferentes sistemas operativos (Windows, Linux, macOS) en un mismo hardware sin
-                interferencias.</li>
-            <li><strong>Pruebas y desarrollo:</strong> Los desarrolladores pueden probar software en diferentes entornos
-                sin necesidad de
-                múltiples equipos físicos.</li>
-            <li><strong>Optimización de recursos:</strong> Permite usar de manera eficiente los recursos del hardware
-                físico,
-                alojando múltiples VM en una sola máquina.</li>
-            <li><strong>Seguridad:</strong> El aislamiento reduce el riesgo de que una vulnerabilidad en una VM afecte
-                al sistema
-                anfitrión o a otras VMs.</li>
-            <li><strong>Compatibilidad</strong> Es posible ejecutar aplicaciones que requieren versiones específicas de
-                sistemas operativos
-                en máquinas virtuales, incluso si el hardware físico utiliza otro sistema.</li>
-            <li><strong>Facilidad de copia y migración:</strong> Las VMs pueden clonarse, respaldarse y transferirse
-                entre servidores
-                o dispositivos con facilidad.</li>
-            <li><strong>Ahorro de costos:</strong> En lugar de comprar múltiples servidores físicos, las empresas pueden
-                virtualizar
-                sus infraestructuras, reduciendo costos de hardware y mantenimiento.</li>
-        </ul>
+        <div class="contenedor2">
+            <div class="contenedor-imagen">
+                <img id="imgCodigoFuente" src="../imagenes/imagenmaquinavirtual.jpg" alt="Imagen de Maquina Virtual">
+            </div>
+            <div class="Contenedor2-texto">
+                <h1 class="titulo">Maquina Virtual y su utilidad</h1>
+                <p> Una máquina virtual es un software que emula un sistema informático completo, incluyendo el hardware
+                    y el
+                    SO.
+                    Ejecuta un SO y sus aplicaciones como si estuvieran en una máquina física, pero realmente está
+                    funcionando
+                    dentro
+                    de un entorno virtualizado.
+                    Básicamente es un ordenador dentro de otro ordenador.
+                </p>
+                <ul>
+                    <li><strong>Aislamiento:</strong> cada maquina funciona de manera independiente,
+                        lo que permite ejecutar diferentes sistemas operativos (Windows, Linux, macOS) en un mismo
+                        hardware sin
+                        interferencias.</li>
+                    <li><strong>Pruebas y desarrollo:</strong> Los desarrolladores pueden probar software en diferentes
+                        entornos
+                        sin necesidad de
+                        múltiples equipos físicos.</li>
+                    <li><strong>Optimización de recursos:</strong> Permite usar de manera eficiente los recursos del
+                        hardware
+                        físico,
+                        alojando múltiples VM en una sola máquina.</li>
+                    <li><strong>Seguridad:</strong> El aislamiento reduce el riesgo de que una vulnerabilidad en una VM
+                        afecte
+                        al sistema
+                        anfitrión o a otras VMs.</li>
+                    <li><strong>Compatibilidad</strong> Es posible ejecutar aplicaciones que requieren versiones
+                        específicas de
+                        sistemas operativos
+                        en máquinas virtuales, incluso si el hardware físico utiliza otro sistema.</li>
+                    <li><strong>Facilidad de copia y migración:</strong> Las VMs pueden clonarse, respaldarse y
+                        transferirse
+                        entre servidores
+                        o dispositivos con facilidad.</li>
+                    <li><strong>Ahorro de costos:</strong> En lugar de comprar múltiples servidores físicos, las
+                        empresas pueden
+                        virtualizar
+                        sus infraestructuras, reduciendo costos de hardware y mantenimiento.</li>
+                </ul>
+
+            </div>
+
+
+
+
+        </div>
+
+
 
         <br></br>
         <br></br>
         <!--SEGUNDO APARTADO -->
+        
         <h2>Razón de ser de la ingeniería del software.</h2>
         <p>La razón de ser de la ingeniería de software es satisfacer la necesidad de desarrollar sistemas de software
             de calidad,
@@ -301,8 +377,13 @@
 
         <br></br>
         <!--TERCER APARTADO -->
-
-        <h1 class="titulo">Fases del desarrollo de una aplicación informática.</h1>
+        <div class="contenedor1">
+              <div>
+                  <img src="../imagenes/imagenrazones.jpg"
+                    alt="Imagen del apartado de razones">
+              </div>
+            <div class="Contenedor1-texto">
+                <h1 class="titulo">Fases del desarrollo de una aplicación informática.</h1>
         <ol>
             <li><strong>Análisis de requisitos</strong> Identificar y documentar las necesidades del cliente o usuario
                 final.</li>
@@ -325,8 +406,13 @@
 
         </ol>
 
-
         </ol>
+
+            </div>
+        </div>
+
+
+        
 
         <br></br>
         <!--CUARTO APARTADO -->
