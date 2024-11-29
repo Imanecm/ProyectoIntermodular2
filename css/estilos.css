@@ -480,3 +480,169 @@ p {
   font-size: 16px;
   color: white;
 }
+/*Implementado de este vídeo de youtube: https://youtu.be/RPFfpG0SvV0?si=OcaSaszR36bFs4Fu */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #010615;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  background: #060c21;
+  transition: 0.5s;
+  flex-direction: column;  /* Esto asegura que las cajas se ajusten a su contenido */
+}
+
+.box .imgBox {
+  position: relative;
+  width: 100%;
+  height: auto;  /* Ajusta la altura de la imagen según su relación de aspecto */
+  overflow: hidden; /* Asegura que la imagen no se desborde */
+}
+
+.box .imgBox img {
+  width: 100%;   /* Asegura que la imagen ocupe todo el ancho */
+  height: auto;  /* Ajusta la altura de la imagen manteniendo la proporción */
+  object-fit: cover;  /* La imagen cubre el contenedor sin distorsionarse */
+  opacity: 0.1;
+  transition: 0.5s;
+}
+
+.box:hover .imgBox img {
+  opacity: 1;
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+.box:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+.box:before,
+.box:after {
+  background: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after {
+  background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after {
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}
+
+.box .content {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 90px;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.box:hover .content {
+  opacity: 1;  /* Cambié esta propiedad para hacerla visible al pasar el mouse */
+  transition: 0.5s;
+}
+
+.box .content h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.box .content h2 span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+.tituloimagenes{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-family: Montserrat, sans-serif;
+  line-height: 2; 
+}
+@media screen and (max-width: 768px) {
+  body {
+      flex-direction: column; /* Apilar elementos verticalmente */
+      padding: 10px; /* Añadir un poco de espacio alrededor */
+  }
+
+  .box {
+      width: 90%; /* Reducir el tamaño de las cajas */
+      margin: 20px auto; /* Centrar las cajas con márgenes automáticos */
+  }
+
+  .box .imgBox {
+      width: 100%; /* Ajustar la imagen al ancho del contenedor */
+  }
+
+  .box .content h2 {
+      font-size: 16px; /* Reducir el tamaño del texto */
+      line-height: 1.5; /* Ajustar la altura de línea */
+  }
+
+  .tituloimagenes {
+      font-size: 30px; /* Reducir tamaño de los títulos */
+      text-align: center; /* Centrar los títulos */
+      line-height: 1.5;
+  }
+}
+/* Ajustes para pantallas aún más pequeñas */
+@media screen and (max-width: 480px) {
+  .box {
+      width: 100%; /* Usar todo el ancho de la pantalla */
+      margin: 10px auto; /* Espaciado más pequeño */
+  }
+
+  .box .content h2 {
+      font-size: 14px; /* Reducir aún más el tamaño del texto */
+  }
+
+  .tituloimagenes {
+      font-size: 24px; /* Reducir tamaño del título aún más */
+  }
+}
