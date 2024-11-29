@@ -52,7 +52,7 @@ body {
 }
 
 .primero {
-  color: rgb(255, 0, 0);
+  color: rgb(167, 0, 0);
   text-align: center;
   /* Centra el texto */
   margin-top: 25px;
@@ -326,7 +326,7 @@ p {
   line-height: 2;
 
 }
-
+/*texto con un gif de fondo y bordes rojos*/
 .fondoSP {
   background-image: url('../imagenes/codigosimagen5.gif');
   /* Ruta de la imagen de fondo */
@@ -371,7 +371,7 @@ p {
   /*color: #FFFFFF;*/
   /*background: #FFFFFF;*/
 }
-
+/*cuadrado con color*/ 
 .cuadrado {
   border-radius: 27px;
   background: #554b4b;
@@ -380,12 +380,13 @@ p {
     background-position: center;
     
 }
+/*texto de cuadrado con color*/
 .textocuadrado{
   font-family: Montserrat, sans-serif;
   font-size: 20px;
   text-align: center;
 }
-
+/*contenedor paara el final de todas las paginas añadiendo información*/
 .contenedorfinal{
   
  background-color: #1c1c1c;
@@ -400,7 +401,7 @@ p {
 .contenedorfinal a:hover { text-decoration: underline; }
 .footer-bottom { text-align: center; margin-top: 20px; color: #bbb; font-size: 12px; }
 .socials a { margin-right: 10px; }
-
+/*Ajuste de contenedor final para que en pantallas distintas se vea bien*/
 @media (max-width: 768px) { /* Para pantallas pequeñas (tablets y móviles) */
   .contenedorfinal {
     height: 70vh; /* Aumenta la altura para dispositivos más pequeños */
@@ -425,6 +426,7 @@ p {
   max-width: 800px;
   margin: auto;
   margin-top: 80px;
+  gap: 20px;
 }
 .contenedor-acordeon h2 {
   text-align: center;
@@ -432,11 +434,11 @@ p {
   margin-bottom: 35px;
 }
 .acordeon {
-  background-color: #ffffff;
+  background-color: rgb(221, 221, 199);
 }
 .acordeon label {
   display: flex;
-  padding: 20px;
+  padding: 15px;
   font-size: 20px;
   background-color: #1c1c1c;
   color: white;
@@ -453,9 +455,10 @@ p {
   max-height: 0px;
   overflow: hidden;
   transition: all 300ms ease;
+  color: #1c1c1c;
 }
 .btn-acordeon:checked ~ .contenido-acordeon{
-  max-height: 600px;
+  max-height: 750px;
   padding: 15px 0px;
 }
 .btn-acordeon{
@@ -465,4 +468,15 @@ p {
   .contenedor-acordeon{
     width: 90%;
   }
+}
+.tabulado {
+  padding-left: 20px;
+  list-style-position: inside; /*Los puntos los alinea con el texto,
+   para que quede más centrado*/ 
+}
+.etiquetaDeFoto {
+  display: flex;
+  padding: 15px;
+  font-size: 16px;
+  color: white;
 }

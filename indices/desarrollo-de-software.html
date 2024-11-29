@@ -79,13 +79,13 @@
                 <ol>
                     <li><b>Software de sistema:</b> lo que entendemos por Sistema Operativo, ya que se gestiona y
                         controla los recursos hardware.</li>
-                    <img id="imgDIV" src="../imagenes/softwareSistema.png" alt="Se ven distintos Sistemas Operativos">
+                    <img src="../imagenes/softwareSistema.png" alt="Se ven distintos Sistemas Operativos">
                     <br>
                     <br>
                     <li><b>Software de aplicación:</b> son “aplicaciones” que son creadas para realizar algo de manera
                         especifica, como procesadores de texto,
                         navegadores web, etc.</li>
-                    <img id="imgDIV" src="../imagenes/softwareAplicacion.png" alt="">
+                    <img src="../imagenes/softwareAplicacion.png" alt="">
                     <br>
                     <br>
                     <li><b>Software de desarrollo:</b> son las herramientas que usamos nosotros los programadores para
@@ -104,7 +104,7 @@
                 <h1 class="titulo">Códigos</h1>
                 <h2>Código Fuente</h2>
                 <p>
-                    Empezaré hablando sobre el codigo fuente ya que muchas instrucciones agrupadas escritas por un
+                    Son muchas instrucciones agrupadas escritas por un
                     programador
                     en algún lenguaje de programación, y hay muchos, como pueden serlo mas conocidos/ importantes,
                     Python, Java o C++.
@@ -150,20 +150,9 @@
                 <img src="../imagenes/lenguajesDeProgramacion.png"
                     alt="Muestra los lenguajes de programación más conocidos">
             </div>
-            <div class="Contenedor1-texto">
-                <div class="contenedor-acordeon">
-                    <div class="acordeon">
-                        <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
-                        <label for="btn-acordeon3">
-                            Lenguajes de programación
-                        </label>
-                        <div class="contenido-acordeon">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid amet vero voluptatibus modi
-                                aspernatur commodi quidem cupiditate eum facilis nemo.</p>
-                        </div>
-                    </div>
-                </div>
-                <h1 class="titulo">Lenguajes de programación</h1>
+            <div class="contenedor1-texto">
+
+                <h2>Lenguajes de programación</h2>
                 <p>Los lenguajes de programación tienen todos algo en común y es que, son instrucciones de los programas
                     que ha de ejecutar el ordenador para resolver algún tipo de problema.
                 </p>
@@ -171,16 +160,20 @@
                 <ul>
                     <li><strong>Identificadores</strong> nombre simbólicos, que damos a algunos elementos de
                         programación, como son variables, tipos, módulos, etc</li>
+                    <br>
                     <li><strong>Constantes</strong> son datos que no cambian su valor en el programa, a no ser, que
                         nosotros
                         queramos modificarlo pero sirve justamente para no ir cambiando todo a mano.
                     </li>
+                    <br>
                     <li><strong>Operadores</strong> símbolos que muestran operaciones entre variables, constantes, etc.
                         (suma (+), resta (-)...).</li>
+                    <br>
                     <li><strong>Instrucciones</strong> símbolos especiales que representan estructuras de procesamiento
                         y
                         de definición de elementos de programación y lo hace de manera consecutiva.
                     </li>
+                    <br>
                     <li><strong>Comentarios</strong> se utiliza normalmente para ayudarte a guiarte en el programa,
                         <i>(porque seamos sinceros, si pasan 2 dias ¿sabes que hace no?, pero ¿y si lo dejas 1 mes y lo
                             tienes
@@ -190,56 +183,85 @@
                         </i>
                     </li>
                 </ul>
-                <div class="contenedor2">
-                    <div>
-                        <p><strong>Lenguajes de bajo nivel o lenguajes máquinas
-                            </strong></p>
-                        <p>Siendo el primer lenguaje de programación, es el único lenguaje de programación que
-                            entiende directamente la máquina. Utiliza el alfabeto binario ( números 0 y 1), para
-                            establecer la comunicación con el hardware de la máquina. <br>
-                            Dejó de usarse por ser complejo y fue sustituido por otros más cercanos al lenguaje natural.
-                        </p>
-                        <p><strong>Lenguajes intermedios o lenguajes ensambladores
-                            </strong></p>
-                        <p>Se sustituyen los anteriores lenguajes que utilizaban códigos numéricos o direcciones de
-                            memoria,
-                            por unos más textuales, que son equivalentes a las instrucciones de la máquina, o sea, de
-                            forma simbólica <br>
-                            En definición este lenguaje actúa como puente entre el código fuente escrito por los
-                            programadores y el código de la máquina, de ahí su nombre de lenguaje intermedio. Tiene
-                            varios inconvenientes;
-                            tiene un repertorio muy reducido de instrucciones, tiene formato muy rígido y depende mucho
-                            del hardware.
-                        </p>
-                        <p><strong>Lenguaje de alto nivel o lenguajes evolucionados</strong></p>
-                        <p>Este lenguaje libera al programador de tareas más costosas. Esto se consigue así por el nivel
-                            de abstracción
-                            que ofrecen estos lenguajes, muy necesario para programadores.
-                        </p>
-                        <ul>
-                            <li>Instrucciones expresan entre caracteres alfanuméricos, numericos y especiales.</li>
-                            <li>Se pueden definir variables para recoger los datos que se vayan a tratar.</li>
-                            <li>Pueden incluirse lineas con comentarios</li>
-                            <li>Disponen de instrucciones mu potentes de tipo aritmetico, logicas de tratamiento de
-                                caracteres, etc.</li>
-                            <li>Tiempo de codificacion y puesto a punto de los programas es menor</li>
-                            <li>Resultan mas faciles de corregir y modificar.(ahora tiempo)</li>
-                            <li>La curva de aprendizaje de las personas es más corta y menos pronunciadad que con los
-                                otros lenguajes.</li>
-                        </ul>
-                        <p><strong>Pero también hay inconvenientes:</strong></p>
-                        <ul>
-                            <li>No se traducen directamente por lo que precisan de un pequeño tiempo de proceso de
-                                traducción</li>
-                            <li>La memoria aumenta, por el traductor, el programa traducido, etc. Aunque, tampoco es
-                                problema, ya que
-                                con el hardware que hay hoy eso no supone un gran problema.</li>
-                        </ul>
+
+                <!--LENGUAJE NIVEL BAJO ACORDEON-->
+                <div class="contenedor-acordeon">
+                    <div class="acordeon">
+                        <input type="checkbox" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                        <label for="btn-acordeon2">
+                            Lenguajes de bajo nivel lenguajes de máquinas
+                        </label>
+                        <div class="contenido-acordeon">
+                            <p>Siendo el primer lenguaje de programación, es el único lenguaje de programación que
+                                entiende directamente la máquina. Utiliza el alfabeto binario ( números 0 y 1), para
+                                establecer la comunicación con el hardware de la máquina. <br>
+                                Dejó de usarse por ser complejo y fue sustituido por otros más cercanos al lenguaje
+                                natural.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--LENGUAJE INTERMEDIO O LENGUAJES ENSAMBLADORES ACORDEON-->
+                <div class="contenedor-acordeon">
+                    <div class="acordeon">
+                        <input type="checkbox" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                        <label for="btn-acordeon3">
+                            Lenguaje intermedio o lenguaje ensamblador
+                        </label>
+                        <div class="contenido-acordeon">
+                            <p>Se sustituyen los anteriores lenguajes que utilizaban códigos numéricos o direcciones de
+                                memoria,
+                                por unos más textuales, que son equivalentes a las instrucciones de la máquina, o sea,
+                                de
+                                forma simbólica <br>
+                                En definición este lenguaje actúa como puente entre el código fuente escrito por los
+                                programadores y el código de la máquina, de ahí su nombre de lenguaje intermedio. Tiene
+                                varios inconvenientes;
+                                tiene un repertorio muy reducido de instrucciones, tiene formato muy rígido y depende
+                                mucho
+                                del hardware.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--LENGUAJE DE NIVEL ALTO O LENGUAJE EVOLUCIONADO-->
+                <div class="contenedor-acordeon">
+                    <div class="acordeon">
+                        <input type="checkbox" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+                        <label for="btn-acordeon4">
+                            Lenguaje de alto nivel o lenguaje evolucionado
+                        </label>
+                        <div class="contenido-acordeon">
+                            <p>Este lenguaje libera al programador de tareas más costosas. Esto se consigue así por el
+                                nivel
+                                de abstracción
+                                que ofrecen estos lenguajes, muy necesario para programadores.
+                            </p>
+                            <ul>
+                                <li>Instrucciones expresan entre caracteres alfanuméricos, numericos y especiales.</li>
+                                <li>Se pueden definir variables para recoger los datos que se vayan a tratar.</li>
+                                <li>Pueden incluirse lineas con comentarios</li>
+                                <li>Disponen de instrucciones mu potentes de tipo aritmetico, logicas de tratamiento de
+                                    caracteres, etc.</li>
+                                <li>Tiempo de codificacion y puesto a punto de los programas es menor</li>
+                                <li>Resultan mas faciles de corregir y modificar.(ahora tiempo)</li>
+                                <li>La curva de aprendizaje de las personas es más corta y menos pronunciadad que con
+                                    los
+                                    otros lenguajes.</li>
+                            </ul>
+                            <p><strong>Pero también hay inconvenientes:</strong></p>
+                            <ul>
+                                <li>No se traducen directamente por lo que precisan de un pequeño tiempo de proceso de
+                                    traducción</li>
+                                <li>La memoria aumenta, por el traductor, el programa traducido, etc. Aunque, tampoco es
+                                    problema, ya que
+                                    con el hardware que hay hoy eso no supone un gran problema.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="separadorColor"></div>
         <div class="contenedor2">
             <div class="contenedor-imagen">
                 <img src="../imagenes/ProcesoDelCodigo.PNG" alt="">
@@ -249,46 +271,44 @@
                     </strong></p>
                 <!-- PREGUNTAR JOSELUIS-->
                 <p>Son caracterizados por el empleo exclusivo de 3 estructuras para la creación de cualquier programa.
-                    <br> Estructura secuencial, alternativa y repetitiva.</p>
-            </div>
-        </div>
-
-        <div class="contenedor-acordeon">
-            <h2>Lenguajes de programación</h2>
-            <div class="acordeon">
-                <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
-                <label for="btn-acordeon1">
-                    ¿blabla bla?
+                    <br> Estructura secuencial, alternativa y repetitiva.
+                </p>
+                <p>Las aplicaciones tambien usan diversos componentes de software, llamados módulos.
+                    <br>Los módulos hacen determinadas tareas de procesamiento, para lo que requiere utilizar datos.
+                </p>
+                <p>En los módulos se van pasando los datos llamados<strong>parámetros</strong> y a veces nos devuelven
+                    resultados</p>
+                <p>Hay 2 tipos de modelos que son:</p>
+                <ul class="tabulado">
+                    <li>procedimientos</li>
+                    <li>funciones</li>
+                </ul>
+                <p>Su diferencia es que las funciones devuelven algún datos mientras que las otras no lo hacen.
+                    <br>Luego podemos hablar sobre el Diagrama de Estructuras. Cada rectángulo es un módulo y las
+                    flechas que los unen son las llamadas.
+                </p>
+                <img class="contenedor-imagen" src="../imagenes/lenguajesDeProgramacioneEstruct.png"
+                    alt="Diagrama de módulos unidos">
+                <label class="etiquetaDeFoto">Modulo A es el módulo llamador. <br> Las líneas que salen de él son las
+                    invocaciones. <br>
+                    Los módulos B y C son los módulos llamados. <br> A su vez llaman a otros módulos más.
                 </label>
-                <div class="contenido-acordeon">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid amet vero voluptatibus modi
-                        aspernatur commodi quidem cupiditate eum facilis nemo.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="contenedor-acordeon">
-            <div class="acordeon">
-                <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
-                <label for="btn-acordeon2">
-                    ¿blabla bla?
-                </label>
-                <div class="contenido-acordeon">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid amet vero voluptatibus modi
-                        aspernatur commodi quidem cupiditate eum facilis nemo.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="contenedor-acordeon">
-            <div class="acordeon">
-                <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
-                <label for="btn-acordeon3">
-                    ¿blabla bla?
-                </label>
-                <div class="contenido-acordeon">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid amet vero voluptatibus modi
-                        aspernatur commodi quidem cupiditate eum facilis nemo.</p>
+                <!--Foto sacada de: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DC2rDTMrxSKQ&psig=AOvVaw0PQlnWspB66hTgSysSto1-&ust=1732905659766000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIie5ffX_4kDFQAAAAAdAAAAABAI-->
+                <div class="contenedor-acordeon">
+                    <div class="acordeon">
+                        <input type="checkbox" name="acordeon" id="btn-acordeon5" class="btn-acordeon">
+                        <label for="btn-acordeon5">
+                            Lenguaje orientado a objetos
+                        </label>
+                        <div class="contenido-acordeon">
+                            <!--PONER EN NEGREITA SIN FALLOS-->
+                            <p>El lenguaje orientado a objetos surgió más tarde, supusieron un cambio de visión en
+                                relacion a
+                                desarrollo softaware. Segun el paradigma orientado a objetos, una aplicacion informatica
+                                consta
+                                de diversos objetos que interactuan entre si.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -368,7 +388,7 @@
         <br></br>
         <br></br>
         <!--SEGUNDO APARTADO -->
-        
+
         <h2>Razón de ser de la ingeniería del software.</h2>
         <p>La razón de ser de la ingeniería de software es satisfacer la necesidad de desarrollar sistemas de software
             de calidad,
@@ -378,33 +398,43 @@
         <br></br>
         <!--TERCER APARTADO -->
         <div class="contenedor1">
-              <div>
-                  <img src="../imagenes/imagenrazones.jpg"
-                    alt="Imagen del apartado de razones">
-              </div>
+            <div>
+                <img src="../imagenes/imagenrazones.jpg" alt="Imagen del apartado de razones">
+            </div>
             <div class="Contenedor1-texto">
                 <h1 class="titulo">Fases del desarrollo de una aplicación informática.</h1>
-        <ol>
-            <li><strong>Análisis de requisitos</strong> Identificar y documentar las necesidades del cliente o usuario
-                final.</li>
-            <li><strong>Diseño</strong> Definir cómo se implementará el software cumpliendo con los requisitos.
-                Incluye el diseño de la arquitectura del sistema, estructuras de datos, interfaces de usuario y
-                algoritmos.</li>
-            <li><strong>Desarrollo o implementación</strong> Construir el software codificando los módulos definidos en
-                el diseño.
-            </li>
-            <li><strong>Pruebas</strong> Identificar y corregir errores para garantizar que el software funcione
-                correctamente.
-            </li>
-            <li><strong>Implementación o despliegue</strong> Instalar y configurar el software en el entorno real de
-                uso.
-            </li>
-            <li><strong>Mantenimiento</strong> Garantizar el correcto funcionamiento del software después de su entrega.
-            </li>
-            <li><strong> Retiro del sistema</strong> Planificar la desactivación del software cuando ya no sea útil o se
-                reemplace por una nueva versión.</li>
+                <ol>
+                    <li><strong>Análisis de requisitos</strong> Identificar y documentar las necesidades del cliente o
+                        usuario
+                        final.</li>
+                    <li><strong>Diseño</strong> Definir cómo se implementará el software cumpliendo con los requisitos.
+                        Incluye el diseño de la arquitectura del sistema, estructuras de datos, interfaces de usuario y
+                        algoritmos.</li>
+                    <li><strong>Desarrollo o implementación</strong> Construir el software codificando los módulos
+                        definidos en
+                        el diseño.
+                    </li>
+                    <li><strong>Pruebas</strong> Identificar y corregir errores para garantizar que el software funcione
+                        correctamente.
+                    </li>
+                    <li><strong>Implementación o despliegue</strong> Instalar y configurar el software en el entorno
+                        real de
+                        uso.
+                    </li>
+                    <li><strong>Mantenimiento</strong> Garantizar el correcto funcionamiento del software después de su
+                        entrega.
+                    </li>
+                    <li><strong> Retiro del sistema</strong> Planificar la desactivación del software cuando ya no sea
+                        útil o se
+                        reemplace por una nueva versión.</li>
+
 
         </ol>
+            </div>
+        </div>
+
+                </ol>
+
             </div>
         </div>
 
@@ -479,8 +509,48 @@
             <li><strong>Spiral Development (Desarrollo en Espiral)</strong> Cada paso de desarrollo (como diseñar) tiene
                 su paso de prueba correspondiente
                 (como verificar que el diseño funcione).</li>
-
         </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="contenedorfinal">
+            <footer class="contenedorfinal">
+                <div class="footer-container">
+                    <div>
+                        <h2>Development Project</h2>
+                        <p>The universe of UI</p>
+                        <p><strong>🛠 MIT License</strong></p>
+                        <p>All content is published under the <a href="#">MIT License</a>.</p>
+                        <div class="socials">
+                            <a href="#">Instagram</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Gaming</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Resources</h3>
+                        <a href="#">Cssbuttons.io</a><br>
+                        <a href="#">Neumorphism.io</a>
+                    </div>
+                    <div>
+                        <h3>Informacion</h3>
+                        <a href="#">Blog</a><br>
+                        <a href="#">Post Guidelines</a>
+                    </div>
+                    <div>
+                        <h3>Legal</h3>
+                        <a href="#">Terms</a><br>
+                        <a href="#">Privacy</a><br>
+                        <a href="#">Cookies</a><br>
+                        <a href="#">Disclaimer</a>
+                    </div>
+                </div>
+                <p class="footer-bottom">&copy; 2024 Pixel Galaxies. All rights reserved.</p>
+            </footer>
+
+        </div>
         <script type="text/javascript" src="./java/java.js"></script>
 </body>
 
