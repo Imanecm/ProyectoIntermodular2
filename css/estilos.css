@@ -3,6 +3,11 @@ body {
   background-color: #1c1c1c;
   color: #ffffff;
   /*background: linear-gradient(0deg, #000000 0%, #616161 100%);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 #indice {
@@ -16,7 +21,7 @@ body {
   /* Centra la imagen */
   color: white;
   /* Asegura que el texto sea legible sobre la imagen */
-  padding: 10px 25px;
+  padding: 5px 25px;
   /* Ajusta el padding */
   position: fixed;
   /* Fija el índice en la parte superior */
@@ -487,17 +492,6 @@ p {
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 100vh;
-  background: #010615;
-  
-}
-
 .box {
   position: relative;
   display: flex;
