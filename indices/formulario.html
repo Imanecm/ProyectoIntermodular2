@@ -1,29 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <link rel="stylesheet" href="../css/estilos.css">
-    <link rel="stylesheet" href="../java/java.js">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>ProyectoIntermodular</title>
+	<meta charset="UTF-8">
+	<title>Formulario de Contacto</title>
+	<style>
+		/* Estilos generales */
+		body {
+			font-family: Arial, sans-serif;
+			background-image: url('../imagenes/imagenparaformulario2.jpg'); /* Imagen de fondo */
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+		}
+
+		/* Estilo del formulario */
+		form {
+			background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+			border-radius: 10px;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+			padding: 20px;
+			width: 100%;
+			max-width: 400px;
+			transform: translateX(-20px); /* Mueve el formulario a la izquierda */
+		}
+
+		h1 {
+			font-size: 1.5em;
+			color: #333;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+
+		p {
+			color: #666;
+			margin-bottom: 10px;
+		}
+
+		label {
+			font-weight: bold;
+			color: #333;
+			display: inline-block;
+			margin-bottom: 5px;
+		}
+
+		input[type="text"], textarea, select {
+			width: 100%;
+			padding: 10px;
+			margin-top: 5px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+
+		input[type="text"]:focus, textarea:focus, select:focus {
+			border-color: #007BFF;
+			outline: none;
+			box-shadow: 0px 0px 4px rgba(0, 123, 255, 0.4);
+		}
+
+		textarea {
+			height: 80px;
+			resize: vertical;
+		}
+
+		/* Estilos para el grupo de radio buttons */
+		.radio-group {
+			margin-top: 10px;
+			margin-bottom: 15px;
+		}
+
+		.radio-group label {
+			font-weight: normal;
+			margin-left: 5px;
+		}
+
+		.radio-group input {
+			margin-right: 5px;
+		}
+
+		/* Estilos para botones */
+		input[type="submit"], button {
+			width: 100%;
+			background-color: #007BFF;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 1em;
+			margin-top: 10px;
+		}
+
+		input[type="submit"]:hover, button:hover {
+			background-color: #0056b3;
+		}
+
+		input[type="submit"]:active, button:active {
+			background-color: #004085;
+		}
+	</style>
 </head>
-
 <body>
-    <div class="fondo">
-        <hr>
-        </hr>
-        <hr>
-        </hr>
-        <div id="indice" style="display: flex; align-items: center;">
-            <img src="../imagenes/Logotipo.png" id="logotipo" alt="Logotipo">
+	<form action="https://formtester.goodbytes.be/post.php" method="post">
+		<h1>FORMULARIO DE CONTACTO</h1>
+		<p>Este formulario se envía a una web de terceros, no introduzcas información personal ni contraseñas.</p>
+		
+		<label for="nombre">Tu nombre:</label>
+		<input type="text" id="nombre" name="nombre">
 
-            <a class="primero" href="../index.html">
-                <h1 class="text-shadow-pop-top">Development Project</h1></a>
+		<label for="correo">Tu dirección de correo:</label>
+		<input type="text" id="correo" name="correo">
 
-            <div id="horaActual" style="display: flex; align-items: center;"></div>
-        </div>
-        <h1>sdfjasdjfsdk</h1>
-        <script type="text/javascript" src="../java/java.js"></script>
+		<label for="mensaje">Tu mensaje:</label>
+		<textarea id="mensaje" name="mensaje"></textarea>
+		
+		<label for="envioEmail">¿Quieres que te contestemos por email?</label>
+		<select id="envioEmail" name="envioEmail">
+			<option value="si">Si</option>
+			<option value="no">No</option>
+		</select>
+
+		<button type="button" onclick="enviarEmail()">Enviar por Email</button>
+		<input type="submit" value="Enviar mensaje">
+
+		<div class="radio-group">
+			<p>Tipo de usuario:</p>
+			<input type="radio" id="alumno" name="tipoUsuario" value="Alumno">
+			<label for="alumno">Alumno</label><br>
+			<input type="radio" id="profesor" name="tipoUsuario" value="Profesor">
+			<label for="profesor">Profesor</label><br>
+			<input type="radio" id="externo" name="tipoUsuario" value="Usuario Externo">
+			<label for="externo">Usuario Externo</label><br>
+		</div>
+	</form>
+
+	<script>
+		function enviarEmail() {
+			const nombre = document.querySelector('input[name="nombre"]').value;
+			const correo = document.querySelector('input[name="correo"]').value;
+			const mensaje = document.querySelector('textarea[name="mensaje"]').value;
+			const envioEmail = document.querySelector('select[name="envioEmail"]').value;
+			const tipoUsuario = document.querySelector('input[name="tipoUsuario"]:checked').value;
+			const subject = "Formulario de Contacto";
+			const body = `Nombre: ${nombre}%0AEmail: ${correo}%0AMensaje: ${mensaje}%0AContestación por Email: ${envioEmail}%0ATipo de Usuario: ${tipoUsuario}`;
+			window.location.href = `mailto:?subject=${subject}&body=${body}`;
+		}
+	</script>
 </body>
-
 </html>
