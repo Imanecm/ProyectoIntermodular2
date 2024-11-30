@@ -25,5 +25,45 @@ document.querySelectorAll('.service').forEach(service => {
     alert(`Has seleccionado: ${service.querySelector('.servicios-text').textContent}`);
   });
 });
+//PARTE CARRUSSEL DE FOTOS
+const list = document.querySelector('.list');
+const items = document.querySelectorAll('.item');
+const dots = document.querySelectorAll('.dot');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+let index = 0;
 
+// Función para actualizar el carrusel
+function updateCarousel() {
+    // Mueve el slider
+    list.style.transform = `translateX(-${index * 100}%)`;
+    // Actualiza los puntos
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+}
 
+// Botón siguiente
+nextBtn.addEventListener('click', () => {
+    index = (index + 1) % items.length;
+    updateCarousel();
+});
+
+// Botón previo
+prevBtn.addEventListener('click', () => {
+    index = (index - 1 + items.length) % items.length;
+    updateCarousel();
+});
+
+// Click en los puntos
+dots.forEach((dot, dotIndex) => {
+    dot.addEventListener('click', () => {
+        index = dotIndex;
+        updateCarousel();
+    });
+});
+
+// Cambio automático cada 5 segundos
+setInterval(() => {
+    index = (index + 1) % items.length;
+    updateCarousel();
+}, 5000);
