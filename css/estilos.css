@@ -284,6 +284,14 @@ p {
   margin: 20px;
   padding: auto;
 }
+li {
+  font-family: Montserrat , sans-serif;
+}
+
+ol {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+}
 
 .text-shadow-pop-top {
   -webkit-animation: text-shadow-pop-top 0.6s both;
