@@ -124,48 +124,583 @@
         <h1>Cuestionario</h1>
         <form id="quiz">
             <div class="question" id="q1-container">
-                <p>1. ¿Cuál es la capital de Francia?</p>
+                <p>1. ¿Cuál es la función principal del hardware en un sistema informático?</p>
                 <div class="answers">
-                    <label><input type="radio" name="q1" value="París"> París</label>
-                    <label><input type="radio" name="q1" value="Madrid"> Madrid</label>
-                    <label><input type="radio" name="q1" value="Roma"> Roma</label>
+                    <label><input type="radio" name="q1" value="París">Proporcionar las instrucciones que el procesador debe ejecutar.</label>
+                    <label><input type="radio" name="q1" value="Madrid">Ejecutar aplicaciones y programas. </label>
+                    <label><input type="radio" name="q1" value="Roma">Proveer la infraestructura física para ejecutar el software.</label>
                 </div>
                 <button type="button" class="clear-button" onclick="clearSelection('q1')">Quitar selección</button>
                 <div class="result" id="q1-result"></div>
             </div>
 
             <div class="question" id="q2-container">
-                <p>2. ¿Cuál es el resultado de 2 + 2?</p>
+                <p>2. ¿Qué rol desempeña el sistema operativo en la relación entre software y hardware?</p>
                 <div class="answers">
-                    <label><input type="radio" name="q2" value="3"> 3</label>
-                    <label><input type="radio" name="q2" value="4"> 4</label>
-                    <label><input type="radio" name="q2" value="5"> 5</label>
+                    <label><input type="radio" name="q2" value="3"> Es el software que se encarga de ejecutar las aplicaciones directamente en el hardware.</label>
+                    <label><input type="radio" name="q2" value="4"> Actúa como intermediario entre el software y el hardware, gestionando los recursos del sistema. </label>
+                    <label><input type="radio" name="q2" value="5"> Es el componente físico que ejecuta las instrucciones del procesador.</label>
                 </div>
                 <button type="button" class="clear-button" onclick="clearSelection('q2')">Quitar selección</button>
                 <div class="result" id="q2-result"></div>
             </div>
 
             <div class="question" id="q3-container">
-                <p>3. ¿Qué planeta es conocido como el planeta rojo?</p>
+                <p>3. ¿Cuál de las siguientes afirmaciones sobre software y hardware es correcta?</p>
                 <div class="answers">
-                    <label><input type="radio" name="q3" value="Marte"> Marte</label>
-                    <label><input type="radio" name="q3" value="Venus"> Venus</label>
-                    <label><input type="radio" name="q3" value="Júpiter"> Júpiter</label>
+                    <label><input type="radio" name="q3" value="Marte"> El hardware puede funcionar sin el software, pero el software no puede funcionar sin el hardware.</label>
+                    <label><input type="radio" name="q3" value="Venus"> Ambos, hardware y software, son igualmente independientes y no dependen uno del otro.</label>
+                    <label><input type="radio" name="q3" value="Júpiter"> El software necesita del hardware para funcionar, mientras que el hardware requiere del software para ser útil.</label>
                 </div>
                 <button type="button" class="clear-button" onclick="clearSelection('q3')">Quitar selección</button>
                 <div class="result" id="q3-result"></div>
             </div>
 
             <div class="question" id="q4-container">
-                <p>4. ¿En qué continente se encuentra Egipto?</p>
+                <p>4. ¿Qué sucede cuando el hardware de un sistema es actualizado?</p>
                 <div class="answers">
-                    <label><input type="radio" name="q4" value="África"> África</label>
-                    <label><input type="radio" name="q4" value="Asia"> Asia</label>
-                    <label><input type="radio" name="q4" value="Europa"> Europa</label>
+                    <label><input type="radio" name="q4" value="África"> No tiene ningún impacto en el software que se ejecuta.</label>
+                    <label><input type="radio" name="q4" value="Asia"> El software debe ser modificado para aprovechar las mejoras del hardware.</label>
+                    <label><input type="radio" name="q4" value="Europa"> El software dejará de funcionar correctamente inmediatamente.</label>
                 </div>
                 <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
                 <div class="result" id="q4-result"></div>
             </div>
+
+            <div class="question" id="q4-container">
+                <p>5. ¿Qué es el código fuente?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">  Las instrucciones escritas en lenguaje máquina que la computadora ejecuta directamente.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Un conjunto de instrucciones escritas por un programador en un lenguaje de programación de alto nivel.</label>
+                    <label><input type="radio" name="q4" value="Europa"> El resultado de compilar un programa, listo para ser ejecutado por la máquina.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>6. ¿Cuál es el principal propósito del código objeto?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">  Ser entendido y modificado directamente por los programadores.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Contener las instrucciones traducidas del código fuente en un lenguaje intermedio o máquina.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Proveer una interfaz gráfica para los usuarios finales.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>7. ¿Cuál de los siguientes tipos de traductores convierte el código fuente directamente en código ejecutable?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Intérprete.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Compilador.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Ensamblador.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>8. ¿Cuál es una diferencia clave entre un intérprete y un compilador?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">El intérprete traduce el código línea por línea y el compilador traduce todo el programa antes de ejecutarlo.</label>
+                    <label><input type="radio" name="q4" value="Asia">El compilador solo traduce lenguajes de bajo nivel, mientras que el intérprete traduce lenguajes de alto nivel.</label>
+                    <label><input type="radio" name="q4" value="Europa">  Ambos realizan exactamente la misma función, sin diferencias significativas.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>9. ¿Qué caracteriza a los lenguajes de programación de bajo nivel?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Están cerca del lenguaje humano y son fáciles de leer.</label>
+                    <label><input type="radio" name="q4" value="Asia">Son directamente entendibles por la máquina y requieren un conocimiento profundo del hardware.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Son independientes del hardware y pueden ejecutarse en múltiples plataformas.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>10. ¿Cuál de los siguientes es un ejemplo de lenguaje de programación de alto nivel?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Ensamblador.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Python.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Lenguaje máquina.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>11. ¿Qué distingue a los lenguajes compilados de los lenguajes interpretados?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Los lenguajes compilados se traducen en tiempo de ejecución, mientras que los interpretados se traducen antes de la ejecución.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Los lenguajes compilados son más rápidos en ejecución porque el código se traduce previamente a código máquina.</label>
+                    <label><input type="radio" name="q4" value="Europa">  Los lenguajes compilados no requieren traductores, mientras que los interpretados sí.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>12. ¿Cuál de estas categorías describe a un lenguaje como SQL?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Lenguaje de propósito general.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Lenguaje de marcado.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Lenguaje de dominio específico.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>13. ¿Qué define a los lenguajes de propósito general?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Se utilizan para resolver problemas específicos en un dominio concreto.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Pueden ser utilizados para desarrollar software de cualquier tipo o propósito.</label>
+                    <label><input type="radio" name="q4" value="Europa">  Solo funcionan en plataformas específicas y no son portables.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>14. ¿En qué se diferencian los lenguajes declarativos de los lenguajes imperativos?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Los lenguajes declarativos especifican qué hacer, mientras que los imperativos indican cómo hacerlo.</label>
+                    <label><input type="radio" name="q4" value="Asia">  Los lenguajes declarativos son más cercanos al hardware, mientras que los imperativos son más abstractos.</label>
+                    <label><input type="radio" name="q4" value="Europa"> No hay diferencias significativas entre ellos.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>15. ¿Cuál de los siguientes lenguajes se clasifica como funcional?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">C++.</label>
+                    <label><input type="radio" name="q4" value="Asia">Haskell.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Java.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>16. ¿Qué tipo de lenguaje es HTML?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Lenguaje de marcado.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Lenguaje de programación de propósito general.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Lenguaje funcional.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>17. ¿Cuál es el propósito principal del código intermedio en el contexto de las máquinas virtuales?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Reducir el tamaño del programa para ocupar menos memoria.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Actuar como una representación portátil entre diferentes plataformas antes de ser ejecutado.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Permitir que los desarrolladores eviten la necesidad de depurar sus programas.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>18. ¿Qué ventaja ofrece el uso de código intermedio para la ejecución en máquinas virtuales?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Mejora la velocidad de ejecución en comparación con el código máquina nativo.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Permite ejecutar el mismo programa en múltiples plataformas con una máquina virtual adecuada.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Evita la necesidad de un traductor como un compilador o intérprete.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>19. ¿Qué característica clave debe tener el código intermedio para ser eficiente en máquinas virtuales?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Ser completamente dependiente del hardware en el que se ejecuta.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Ser independiente del lenguaje de programación y la arquitectura de hardware.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Incluir instrucciones directamente interpretables por el sistema operativo.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>20. ¿Cuál de los siguientes ejemplos es una implementación conocida de código intermedio?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">  El bytecode de Java utilizado en la Máquina Virtual Java (JVM).</label>
+                    <label><input type="radio" name="q4" value="Asia"> El código fuente en Python antes de ser interpretado.</label>
+                    <label><input type="radio" name="q4" value="Europa"> El ensamblador utilizado en arquitectura x86.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>21. El objetivo de esta tarea es analizar las necesidades de los usuarios potenciales del software para determinar qué debe hacer la aplicación y, de acuerdo con ello, escribir una especificación precisa para dicho sistema.</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Diseño</label>
+                    <label><input type="radio" name="q4" value="Asia"> Análisis</label>
+                    <label><input type="radio" name="q4" value="Europa"> Programación</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>22. La etapa de programación en las fases del desarrollo de una aplicación informatica es:</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Traducir los resultados de la fase de diseño en una forma legible para la máquina. Se escribe un código fuente y se convierte en código ejecutable</label>
+                    <label><input type="radio" name="q4" value="Asia"> Ninguna es correcta</label>
+                    <label><input type="radio" name="q4" value="Europa"> Comprobar si la aplicación funciona correctamente, con diferentes tipos de pruebas.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>23. El mantenimiento es:</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Llevar acabo la instalación y puesta en marcha del software.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Realizar cambios sobre el software, para lo que se aplicara al programa existente, en vez de a uno nuevo</label>
+                    <label><input type="radio" name="q4" value="Europa"> Consiste en realizar los cambios en el software, pero en uno nuevo y volvérselo a entregar al cliente.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>24. Marca la respuesta en la que salgan todos los pasos y de manera correcta:</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Diseño - Pruebas - Mantenimiento</label>
+                    <label><input type="radio" name="q4" value="Asia"> Análisis - Programación - Demostración - Venta al cliente</label>
+                    <label><input type="radio" name="q4" value="Europa"> Análisis - Diseño - Programación - Pruebas - Explotación - Mantenimiento</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>25. En el análisis debemos tener varias cosas en cuenta como son:</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> La fiabilidad, Seguridad y mantenibilidad</label>
+                    <label><input type="radio" name="q4" value="Asia"> Seguridad y fiabilidad</label>
+                    <label><input type="radio" name="q4" value="Europa"> Fiabilidad, Escalabilidad, Extensibilidad, Seguridad y Mantenibilidad</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>26. En programación no se nos pueden olvidar los siguientes elementos para que el software funcione de manera correcta:</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Los nombres; clases, atributos, métodos, variables, constantes, etc</label>
+                    <label><input type="radio" name="q4" value="Asia"> Comentarios, declaraciones, nombres, líneas en blanco y sangrados.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Comentarios, nombres y sangrados.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>27. ¿Qué significa la Ingeniería software?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Que no solo es un programa que funciona, sino que tambien comprende las estructuras de datos sobre las que opera el programa</label>
+                    <label><input type="radio" name="q4" value="Asia"> Que usa los principios de ingenieria ara obtener un software para usarlo en máquinas virtuales.</label>
+                    <label><input type="radio" name="q4" value="Europa"> A y B son correctas.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>28. ¿Cuál de estas metodologías pertenece a la ingeniería del software?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Método de Newton.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Desarrollo Ágil.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Leyes de la Termodinámica.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>29. ¿Qué se realiza en la fase de diseño de software?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> La implementación de código fuente directamente.</label>
+                    <label><input type="radio" name="q4" value="Asia"> La creación de la estructura y arquitectura del sistema basado en los requisitos.</label>
+                    <label><input type="radio" name="q4" value="Europa"> La recopilación de requisitos del cliente.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>30. ¿Cuál es el propósito de la fase de implementación?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Probar el software en diferentes entornos de producción.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Transformar el diseño en código ejecutable.</label>
+                    <label><input type="radio" name="q4" value="Europa">  Identificar posibles requisitos adicionales.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>31. ¿Por qué es importante la fase de mantenimiento?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">  Porque asegura que el software sea compatible con nuevas tecnologías y necesidades del cliente.</label>
+                    <label><input type="radio" name="q4" value="Asia">  Porque permite reescribir el código para mejorar la velocidad.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Porque elimina errores que se introdujeron en el diseño.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>32. ¿Cuál es un modelo común del ciclo de vida del software?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Modelo Espiral.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Modelo Periódico.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Modelo Gravitacional.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>33. ¿Cuál es la responsabilidad principal de un analista de sistemas?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Diseñar la interfaz gráfica del software.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Recopilar y documentar los requisitos del cliente para traducirlos en especificaciones técnicas.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Ejecutar pruebas unitarias del software.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>34. ¿Qué hace un desarrollador o programador?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Redacta informes sobre el rendimiento del software.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Convierte el diseño en código funcional usando un lenguaje de programación.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Supervisa las operaciones de hardware en el sistema.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>35. ¿Qué profesional es responsable de la integración y mantenimiento del entorno de desarrollo?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">  Ingeniero de DevOps.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Tester de software.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Diseñador gráfico.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>36. ¿Cuál es la primera fase del ciclo de vida del desarrollo de software?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Implementación.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Análisis de requisitos.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Mantenimiento.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q5-container">
+                <p>37. Dime las 2 respuestas sobre el modelo en cascada</p>
+                <div class="answers">
+                    <label><input type="checkbox" name="q5" value="Python"> Es el ciclo de vida básico, también, el modelo más primitivo de ciclo de vida</label>
+                    <label><input type="checkbox" name="q5" value="HTML"> Una de sus ventajas es este modelo acepta repeticiones y lo hace de forma directa.</label>
+                    <label><input type="checkbox" name="q5" value="CSS"> Una de sus ventajas es este modelo acepta repeticiones y lo hace de forma indirecta.</label>
+                    <label><input type="checkbox" name="q5" value="JavaScript"> Se debe tener presente que cuanto más tarde se detecte un fallo en el desarrollo más costoso será, ya que será necesario rehacer todas las fases previas del ciclo de vida.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q5')">Quitar selección</button>
+                <div class="result" id="q5-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>38. Señala 3 las ventajas del modelo incremental.</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Reduce riesgos de retrasos, de cambios de requisitos y problemas de aceptación</label>
+                    <label><input type="radio" name="q4" value="Asia"> Te evita que lo compruebes ya que así se comprueba automáticamente.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Permiten al usuario validar el sistema a medida que se constituye</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q5-container">
+                <p>39. Señala 2 caracteristicas de la construccion de prototipos:</p>
+                <div class="answers">
+                    <label><input type="checkbox" name="q5" value="Python"> Se construyen el software desde cero lo que permite implementar gradualmente el diseño.</label>
+                    <label><input type="checkbox" name="q5" value="HTML"> No son sucesivas es decir, la version que se crea es la que hay</label>
+                    <label><input type="checkbox" name="q5" value="CSS"> Trata de un modelo que describe la interacción hombre-maquina, de manera que facilita al usuario la comprension de cmo se producira la interaccion.</label>
+                    <label><input type="checkbox" name="q5" value="JavaScript"> Se construye el software a partir de versiones cada vez más completas, de manera que se realizan una serie de tareas varias veces.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q5')">Quitar selección</button>
+                <div class="result" id="q5-result"></div>
+            </div>
+
+            <div class="question" id="q5-container">
+                <p>40. Señala 2 características del modelo en espiral</p>
+                <div class="answers">
+                    <label><input type="checkbox" name="q5" value="Python"> Tiene una gran consideración de riesgos o problemas que pueden afectar al desarrollo, y es capaz de reaccionar en caso de ocurra algún problema</label>
+                    <label><input type="checkbox" name="q5" value="HTML"> Si ocurre algun problema no podran ser capaces de reaccionar ante el problema pero se quedaran en la version de ultima modificacion</label>
+                    <label><input type="checkbox" name="q5" value="CSS"> Se crean 4 tipos de aplicaciones por separado y al final queda la más completa y sin ningun error.</label>
+                    <label><input type="checkbox" name="q5" value="JavaScript"> Si hay cierta inseguridad se puede aplciar el enfoque de construccion de prototipos para eliminar ese riesgo</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q5')">Quitar selección</button>
+                <div class="result" id="q5-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>41. ¿Qué caracteriza al modelo de ciclo de vida en cascada?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">  Es iterativo, permite volver a fases anteriores en cualquier momento.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Es secuencial, cada fase debe completarse antes de pasar a la siguiente.</label>
+                    <label><input type="radio" name="q4" value="Europa"> No incluye la fase de mantenimiento en su estructura.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>42. ¿Cuál es la principal ventaja del modelo iterativo?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Permite obtener retroalimentación temprana mediante versiones funcionales parciales del software.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Evita la necesidad de documentar los requisitos al inicio.</label>
+                    <label><input type="radio" name="q4" value="Europa">Garantiza que todas las fases sean realizadas una sola vez.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>43. ¿Qué diferencia clave tiene el modelo espiral respecto al modelo en cascada?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">  El modelo espiral solo se utiliza para pequeños proyectos.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Incluye evaluaciones de riesgos en cada iteración para minimizar problemas.</label>
+                    <label><input type="radio" name="q4" value="Europa"> No realiza iteraciones durante el desarrollo del software.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>44. ¿Cuál es una característica principal del modelo ágil?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">  Planifica el proyecto completo al inicio y lo sigue estrictamente.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Se basa en ciclos cortos e iterativos, fomentando la colaboración constante con el cliente.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Requiere que todos los requisitos sean completamente definidos antes de iniciar el desarrollo.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q5-container">
+                <p>45. Marcar 2 respuestas correctas sobre los principios de agilidad</p>
+                <div class="answers">
+                    <label><input type="checkbox" name="q5" value="Python"> El desarrollo agil hace enfasis en la entrega la cliente</label>
+                    <label><input type="checkbox" name="q5" value="HTML"> No se realizan entregas frecuentes, pero se entrega todo ya hecho sin necesidad de cambios</label>
+                    <label><input type="checkbox" name="q5" value="CSS"> Si pasa mas tiempo y se detecta la necesidad de hacer cambio casi, al final no supondrá ningun coste más.</label>
+                    <label><input type="checkbox" name="q5" value="JavaScript"> Una de sus ventajas es su mayor facilidad para incorporar los cambios a lo largo del desarrollo y el menor coste que estos conllevan</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q5')">Quitar selección</button>
+                <div class="result" id="q5-result"></div>
+            </div>
+
+            <div class="question" id="q5-container">
+                <p>46. Marca 3 correctas sobre los valores de la programacion externa.</p>
+                <div class="answers">
+                    <label><input type="checkbox" name="q5" value="Python"> La simplicidad es uno de lo valores que entra en la progamacion para agilizar y facilitar el mantenimiento</label>
+                    <label><input type="checkbox" name="q5" value="HTML"> La retroalimentacion no es un valor que sea propio de la programacion externa de echo, no es esencial para este caso</label>
+                    <label><input type="checkbox" name="q5" value="CSS"> Comunicacion, que tiene que ser cercana pero infromal con el cliente</label>
+                    <label><input type="checkbox" name="q5" value="JavaScript"> La comunicacion tiene que ser formal de hablar de forma muy educada al cliente</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q5')">Quitar selección</button>
+                <div class="result" id="q5-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>47. ¿Qué significa RUP en el contexto de las metodologías de desarrollo de software?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> Rational Unified Process.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Rapid User Programming.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Reliable Unit Processing.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>48. ¿Cuál es una característica clave de la metodología RUP?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">  Está basada en fases iterativas y cada fase tiene objetivos específicos y entregables.</label>
+                    <label><input type="radio" name="q4" value="Asia">  Prioriza la flexibilidad y la respuesta al cambio por encima de la planificación.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Desarrolla el software de forma secuencial sin iteraciones.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>49. ¿Cuál es un principio fundamental de las metodologías ágiles?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">   La documentación completa es el entregable más importante.</label>
+                    <label><input type="radio" name="q4" value="Asia"> La colaboración constante con el cliente durante el desarrollo.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Las fases de desarrollo deben ser estrictamente secuenciales.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>50. ¿Qué fase inicial en RUP es crucial para establecer la visión del proyecto?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">  Elaboración.</label>
+                    <label><input type="radio" name="q4" value="Asia"> Inicio.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Construcción.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>51. ¿Cuál de las siguientes es una práctica común en metodologías ágiles como Scrum?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">  Uso estricto de documentación detallada al inicio del proyecto.</label>
+                    <label><input type="radio" name="q4" value="Asia"> División del trabajo en sprints o ciclos cortos.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Fijación de todos los requisitos antes de empezar el desarrollo.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>52. ¿Qué diferencia principal hay entre RUP y las metodologías ágiles?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África">  RUP es iterativo pero estructurado en fases específicas, mientras que las metodologías ágiles son más flexibles y adaptativas.
+                    </label>
+                    <label><input type="radio" name="q4" value="Asia"> RUP no permite iteraciones en las fases de desarrollo, mientras que las metodologías ágiles sí.</label>
+                    <label><input type="radio" name="q4" value="Europa"> Las metodologías ágiles son siempre más rápidas que RUP en todos los casos.</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
 
             <button type="button" onclick="checkAnswers()">Corregir preguntas</button>
         </form>
@@ -181,31 +716,31 @@
         }
 
         function checkAnswers() {
-            const correctAnswers = {
-                q1: "París",
-                q2: "4",
-                q3: "Marte",
-                q4: "África"
-            };
+    const correctAnswers = {
+        q1: ["París"],
+        q2: ["4"],
+        q3: ["Marte"],
+        q4: ["África"],
+        q37: ["Python", "JavaScript"] // Múltiples respuestas correctas
+    };
 
-            Object.keys(correctAnswers).forEach(question => {
-                const resultDiv = document.getElementById(`${question}-result`);
-                const selected = document.querySelector(`input[name="${question}"]:checked`);
+    Object.keys(correctAnswers).forEach(question => {
+        const resultDiv = document.getElementById(`${question}-result`);
+        const correct = correctAnswers[question];
+        const selected = Array.from(document.querySelectorAll(`input[name="${question}"]:checked`)).map(input => input.value);
 
-                if (selected) {
-                    if (selected.value === correctAnswers[question]) {
-                        resultDiv.textContent = "Correcto ✅";
-                        resultDiv.className = "result correct";
-                    } else {
-                        resultDiv.textContent = "Incorrecto ❌";
-                        resultDiv.className = "result incorrect";
-                    }
-                } else {
-                    resultDiv.textContent = "No has seleccionado una respuesta ❌";
-                    resultDiv.className = "result incorrect";
-                }
-            });
+        if (selected.length === 0) {
+            resultDiv.textContent = "No has seleccionado una respuesta ❌";
+            resultDiv.className = "result incorrect";
+        } else if (JSON.stringify(selected.sort()) === JSON.stringify(correct.sort())) {
+            resultDiv.textContent = "Correcto ✅";
+            resultDiv.className = "result correct";
+        } else {
+            resultDiv.textContent = "Incorrecto ❌";
+            resultDiv.className = "result incorrect";
         }
+    });
+}
     </script>
 </body>
 </html>
