@@ -402,18 +402,40 @@ ol {
 /*contenedor paara el final de todas las paginas añadiendo información*/
 .contenedorfinal{
   
- background-color: #1c1c1c;
+ background-color: #333;
  width: 100%; /* Ancho de 300 píxeles */
   height: 50vh; /* Alto de 200 píxeles */
   box-sizing: border-box;
 }
-.footer-container { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
-.footer-container div { flex: 1; min-width: 150px; }
-.contenedorfinal h2, .contenedorfinal h3 { margin: 10px 0; }
-.contenedorfinal a { color: #b3b3ff; text-decoration: none; }
-.contenedorfinal a:hover { text-decoration: underline; }
-.footer-bottom { text-align: center; margin-top: 20px; color: #bbb; font-size: 12px; }
-.socials a { margin-right: 10px; }
+.footer-container { 
+  display: flex; 
+  justify-content: space-between; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
+.footer-container div { 
+  flex: 1; 
+  min-width: 150px; 
+}
+.contenedorfinal h2, .contenedorfinal h3 { 
+  margin: 10px 0; 
+}
+.contenedorfinal a { 
+  color: #b3b3ff; 
+  text-decoration: none; 
+}
+.contenedorfinal a:hover { 
+  text-decoration: underline; 
+}
+.footer-bottom { 
+  text-align: center; 
+  margin-top: 20px; 
+  color: #bbb; 
+  font-size: 12px; 
+}
+.socials a { 
+  margin-right: 10px; 
+}
 /*Ajuste de contenedor final para que en pantallas distintas se vea bien*/
 @media (max-width: 768px) { /* Para pantallas pequeñas (tablets y móviles) */
   .contenedorfinal {
