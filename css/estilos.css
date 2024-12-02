@@ -647,7 +647,7 @@ p {
   max-width: 800px; /* Tamaño máximo del carrusel */
   margin: auto;
   overflow: hidden; /* Oculta las imágenes que no están visibles */
-  border-radius: 10px; /* Bordes redondeados para un mejor diseño */
+  border-radius: 2em; /* Bordes redondeados para un mejor diseño */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
   background-color: #f8f8f8; /* Fondo neutro detrás de las imágenes */
 }
