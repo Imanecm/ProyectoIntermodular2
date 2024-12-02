@@ -128,7 +128,7 @@
                     <label><input type="radio" name="q1" value="Madrid"> Madrid</label>
                     <label><input type="radio" name="q1" value="Roma"> Roma</label>
                 </div>
-                <button type="button" class="clear-button" onclick="SeleccionClara('q1')">Quitar selección</button>
+                <button type="button" class="clear-button" onclick="clearSelection('q1')">Quitar selección</button>
                 <div class="result" id="q1-result"></div>
             </div>
 
@@ -139,7 +139,7 @@
                     <label><input type="radio" name="q2" value="4"> 4</label>
                     <label><input type="radio" name="q2" value="5"> 5</label>
                 </div>
-                <button type="button" class="clear-button" onclick="SeleccionClara('q2')">Quitar selección</button>
+                <button type="button" class="clear-button" onclick="clearSelection('q2')">Quitar selección</button>
                 <div class="result" id="q2-result"></div>
             </div>
 
@@ -150,7 +150,7 @@
                     <label><input type="radio" name="q3" value="Venus"> Venus</label>
                     <label><input type="radio" name="q3" value="Júpiter"> Júpiter</label>
                 </div>
-                <button type="button" class="clear-button" onclick="SeleccionClara('q3')">Quitar selección</button>
+                <button type="button" class="clear-button" onclick="clearSelection('q3')">Quitar selección</button>
                 <div class="result" id="q3-result"></div>
             </div>
 
@@ -161,11 +161,11 @@
                     <label><input type="radio" name="q4" value="Asia"> Asia</label>
                     <label><input type="radio" name="q4" value="Europa"> Europa</label>
                 </div>
-                <button type="button" class="clear-button" onclick="SeleccionClara('q4')">Quitar selección</button>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
                 <div class="result" id="q4-result"></div>
             </div>
 
-            <button type="button" onclick="respuestaCorrecta()">Corregir preguntas</button>
+            <button type="button" onclick="checkAnswers()">Corregir preguntas</button>
         </form>
         <footer>
             <p>Hecho por Raul, Alejandro e Imen</p>
@@ -173,7 +173,7 @@
     </div>
 
     <script>
-        function SeleccionClara(questionName) {
+        function clearSelection(questionName) {
             const radios = document.getElementsByName(questionName);
             radios.forEach(radio => radio.checked = false);
         }
@@ -207,4 +207,3 @@
     </script>
 </body>
 </html>
-
