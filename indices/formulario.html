@@ -13,35 +13,37 @@
             color: #333;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
+            align-items: flex-start; /* Cambiado a flex-start para permitir desplazamiento */
+            min-height: 100vh;
+            overflow-y: auto; /* Agregado para permitir desplazamiento vertical */
         }
 
         .quiz-container {
             background-color: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            padding: 40px;
+            padding: 20px; /* Reducido ligeramente */
             width: 100%;
             max-width: 600px;
+            margin: 20px 10px; /* Agregado margen para que no se pegue en pantallas pequeñas */
         }
 
         h1 {
-            font-size: 2.5em;
+            font-size: 2em; /* Reducido ligeramente */
             text-align: center;
             color: #333;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .question {
-            margin-bottom: 30px;
+            margin-bottom: 20px; /* Reducido ligeramente */
             padding: 15px;
             border-radius: 8px;
             background-color: #fafafa;
         }
 
         .question p {
-            font-size: 1.1em;
+            font-size: 1em; /* Reducido ligeramente */
             margin-bottom: 15px;
             color: #444;
         }
@@ -53,7 +55,7 @@
             border-radius: 6px;
             margin: 5px 0;
             cursor: pointer;
-            font-size: 1.1em;
+            font-size: 1em; /* Reducido ligeramente */
             transition: background-color 0.3s ease;
         }
 
@@ -69,7 +71,7 @@
             display: block;
             width: 100%;
             padding: 12px;
-            font-size: 1.1em;
+            font-size: 1em; /* Reducido ligeramente */
             background-color: #4caf50;
             color: white;
             border: none;
@@ -111,8 +113,8 @@
 
         footer {
             text-align: center;
-            font-size: 1em;
-            margin-top: 25px;
+            font-size: 0.9em; /* Reducido ligeramente */
+            margin-top: 20px;
             color: #555;
         }
     </style>
