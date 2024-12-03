@@ -35,23 +35,29 @@
         h2 {
             font-size: 1.8em;
         }
+
         .titulo-centrado {
-        text-align: center; /* Centra horizontalmente el título */
-    }
-    .contenedor-ajustartexto {
-        padding-left: 1.5em; /* Añade espacio solo a la izquierda */
-        max-width: 100%; /* Asegura que el ancho del texto se adapte */
-    }
+            text-align: center;
+            /* Centra horizontalmente el título */
+        }
 
-    .imagen-centrada {
-        display: block; /* Hace que la imagen sea un elemento de bloque */
-        margin: 1.5em auto; /* Centra horizontalmente y añade un margen superior e inferior */
-        width: 40%; /* Ajusta el ancho de la imagen */
-        height: auto; /* Mantiene las proporciones */
-    }
-    
+        .contenedor-ajustartexto {
+            padding-left: 1.5em;
+            /* Añade espacio solo a la izquierda */
+            max-width: 100%;
+            /* Asegura que el ancho del texto se adapte */
+        }
 
-    
+        .imagen-centrada {
+            display: block;
+            /* Hace que la imagen sea un elemento de bloque */
+            margin: 1.5em auto;
+            /* Centra horizontalmente y añade un margen superior e inferior */
+            width: 40%;
+            /* Ajusta el ancho de la imagen */
+            height: auto;
+            /* Mantiene las proporciones */
+        }
     </style>
 </head>
 
@@ -152,7 +158,8 @@
                 &emsp;<img src="../imagenes/hardwareCPU.png"
                     alt="la estructura de un ordenador consta de una CPU, y todos sus componentes como la ALU, Unidad de Control, etc">
                 <p> Para la interconexión de estos elementos, se utilizan una serie de conexiones llamadas
-                    <b>&nbsp;buses</b>&nbsp;que son representadas por flechas.</p>
+                    <b>&nbsp;buses</b>&nbsp;que son representadas por flechas.
+                </p>
             </div>
         </div>
         <!-- SEGUNDO CONTENEDOR Código fuente, objeto y ejecutable-->
@@ -499,7 +506,8 @@
                         utilizar estas máquinas virtuales para disponer de manera sencilla de varios sistemas
                         operativos en el mismo ordenador (instalando uno de ellos en la máquina
                         real y otro diferente en la virtual).</li>
-                    <li><strong>Maquinas virtuales de proceso:</strong>estas máquinas ejecutan un proceso concreto dentro
+                    <li><strong>Maquinas virtuales de proceso:</strong>estas máquinas ejecutan un proceso concreto
+                        dentro
                         de un sistema operativo. Este tipo de máquinas se inician cuando se lanza el
                         proceso que se desea ejecutar y se detienen cuando este termina. El objetivo de
                         estas máquinas es permitir que un programa se ejecute de igual forma en cualquier
@@ -510,7 +518,7 @@
                 <br></br>
 
                 <h2>Maquina virtual de Java</h2>
-            
+
                 <ul>
                     <li><strong>Máquina virtual de Java:</strong>es el
                         ejemplo típico de máquina virtual de proceso. Su ventaja es que dota de portabilidad al
@@ -533,7 +541,7 @@
                         para que el programa pueda ser ejecutado. Como la JVM está disponible en
                         diferentes sistemas operativos, los archivos con extensión .class se pueden ejecutar
                         en distintas plataformas, como Windows, Linux, macOS, etcétera.</li>
-                        <img src="../imagenes/imagenmaquinavirtualjava.png" alt="">
+                    <img src="../imagenes/imagenmaquinavirtualjava.png" alt="">
                 </ul>
 
             </div>
@@ -555,7 +563,7 @@
             hardware. La definición que propuso Fitz Bauer para la ingeniería del software es: «el establecimiento
             y uso de principios de ingeniería para llegar a un obtener un software rentable,
             que sea fiable y que funcione eficientemente en máquinas reales».</p>
-            <img class="imagen-centrada" src="../imagenes/imageningenieria.png" alt="Ingenieria del software">
+        <img class="imagen-centrada" src="../imagenes/imageningenieria.png" alt="Ingenieria del software">
 
         <br></br>
         <!--TERCER APARTADO -->
@@ -563,7 +571,8 @@
             <div class="contenedor-ajustartexto">
                 <h1 class="titulo">Fases del desarrollo de una aplicación informática.</h1>
                 <ol>
-                    <li><strong>Análisis:</strong> el objetivo de esta tarea es analizar las necesidades de los usuarios potenciales
+                    <li><strong>Análisis:</strong> el objetivo de esta tarea es analizar las necesidades de los usuarios
+                        potenciales
                         del software para determinar qué debe hacer la aplicación y, de acuerdo
                         con ello, escribir una especificación precisa de dicho sistema. Durante esta fase
                         se pretende responder a las siguientes preguntas: qué información ha de ser procesada,
@@ -573,7 +582,7 @@
                         inicial de comunicación con el cliente que ha encargado el desarrollo de la
                         aplicación, y una vez obtenida la información necesaria, se podrá modelar el sistema.
                         Como resultado, se obtendrá una especificación del sistema, que consistirá en</li>
-                        
+
                     <li><strong>Diseño:</strong> Durante esta fase, se traducen los requisitos resultado de la fase
                         de análisis en componentes de software (tablas de una base de datos, programas
                         con procedimientos o funciones, clases con atributos y métodos, interfaz de usuario,
@@ -581,279 +590,322 @@
                         una de las decisiones que habrá que tomar es decidir qué sistema gestor de base
                         de datos (SGBD) se va a emplear para gestionar la información que debe ser usada
                         o generada por la aplicación: Oracle, MySQL, SQL Server, etcétera.</li>
-                        <br></br>
-                    <li><strong>Programación:</strong> consiste en traducir los resultados de la fase de diseño en una forma
+                    <br></br>
+                    <li><strong>Programación:</strong> consiste en traducir los resultados de la fase de diseño en una
+                        forma
                         legible para la máquina, es decir, se escribe el código fuente de cada componente
                         del software empleando un determinado lenguaje de programación. El
                         resultado de esta etapa es el código ejecutable.</li>
-                        <br></br>
-                    <li><strong>Pruebas:</strong> con estas se comprueba si la aplicación funciona correctamente. Hay diferentes
+                    <br></br>
+                    <li><strong>Pruebas:</strong> con estas se comprueba si la aplicación funciona correctamente. Hay
+                        diferentes
                         tipos de pruebas. Así, se comienza probando cada componente de software
                         por separado (pruebas unitarias) y, posteriormente, se van integrando poco a poco los
-                        componentes (pruebas de integración), hasta probar el programa completo (pruebas de validación), cuyo objetivo es comprobar que la aplicación satisface los requisitos
+                        componentes (pruebas de integración), hasta probar el programa completo (pruebas de validación),
+                        cuyo objetivo es comprobar que la aplicación satisface los requisitos
                         del cliente. Como resultado de estas pruebas, se descubrirán errores, en atención a
                         los cuales, será necesario modificar el código, o incluso rehacer las tareas previas de
                         diseño y/o análisis.</li>
-                    <li><strong>Explotación:</strong> en esta etapa, se lleva a cabo la instalación y puesta en marcha del
+                    <li><strong>Explotación:</strong> en esta etapa, se lleva a cabo la instalación y puesta en marcha
+                        del
                         software en el entorno de trabajo del cliente.</li>
-                        <br></br>
-                    <li><strong>Mantenimiento:</strong> el software sufrirá cambios después de que se entregue al cliente
+                    <br></br>
+
+                    <li><strong>Mantenimiento:</strong> el software sufrirá cambios después de que se entregue al
+                        cliente
                         por diversos motivos. La tarea de mantenimiento consiste en realizar cambios sobre
                         el software, para lo que se aplicará al programa existente, cada una de las actividades
                         precedentes del ciclo de vida en vez de a uno nuevo.</li>
-                        <img class="imagen-centrada" src="../imagenes/imagendesarrolloaplicación.png" alt="Imagen desarrollo aplicacion">
-                        
+                    <img class="imagen-centrada" src="../imagenes/imagendesarrolloaplicación.png"
+                        alt="Imagen desarrollo aplicacion">
+
                 </ol>
 
-                <p>Es necesario llevar a cabo otra tarea, que debe comenzar tras la comunicación inicial con el cliente y que es una actividad
+                <p>Es necesario llevar a cabo otra tarea, que debe comenzar tras la comunicación inicial con el cliente
+                    y que es una actividad
                     más de gestión que técnica. Se trata de la tarea de planificación, que consiste en elaborar
                     un plan del proyecto de software que indique las tareas técnicas que se han de realizar,
                     los riesgos probables, los recursos que se necesitan, los productos de trabajo que
                     se obtendrán y una programación de las actividades.
-                    Es preciso realizar otras tareas adicionales, de menor carácter técnico y también relacionadas con la gestión,
+                    Es preciso realizar otras tareas adicionales, de menor carácter técnico y también relacionadas con
+                    la gestión,
                     y que Pressman (2010) llamó actividades sombrilla:</p>
                 <ol>
-                    <li><strong>Seguimiento y control del proyecto de software:</strong> se debe evaluar periódicamente el
+                    <li><strong>Seguimiento y control del proyecto de software:</strong> se debe evaluar periódicamente
+                        el
                         proyecto comparándolo con el plan preestablecido con el fin de tomar acciones si
                         se produce algún desvío respecto al plan.</li>
-                    <li><strong>Administración del riesgo:</strong> consiste en evaluar los riesgos (problemas) que pueden
+                    <li><strong>Administración del riesgo:</strong> consiste en evaluar los riesgos (problemas) que
+                        pueden
                         afectar al resultado del proyecto o a la calidad del producto.</li>
-                    <li><strong>Aseguramiento de la calidad del software:</strong> se definen y ejecutan las actividades necesarias
+                    <li><strong>Aseguramiento de la calidad del software:</strong> se definen y ejecutan las actividades
+                        necesarias
                         para garantizar la calidad del software.</li>
-                    <li><strong>Revisiones técnicas:</strong> se evalúan los productos obtenidos con el fin de descubrir y eliminar
+                    <li><strong>Revisiones técnicas:</strong> se evalúan los productos obtenidos con el fin de descubrir
+                        y eliminar
                         errores antes de que se propaguen a la siguiente actividad.</li>
-                    <li><strong>Medición:</strong> consiste en definir y reunir las mediciones del proceso, proyecto y producto
+                    <li><strong>Medición:</strong> consiste en definir y reunir las mediciones del proceso, proyecto y
+                        producto
                         para ayudar al equipo a entregar el software que satisfaga las necesidades del
                         cliente.</li>
-                    <li><strong>Administración de la configuración del software:</strong> se administran los efectos del cambio
+                    <li><strong>Administración de la configuración del software:</strong> se administran los efectos del
+                        cambio
                         a lo largo del proceso de desarrollo de software.</li>
-                    <li><strong>Administración de la reutilización:</strong> se establecen los criterios para poder usar productos
+                    <li><strong>Administración de la reutilización:</strong> se establecen los criterios para poder usar
+                        productos
                         del trabajo en proyectos posteriores y los mecanismos para que esto se
                         pueda llevar a la práctica, es decir, para obtener componentes reutilizables.</li>
-                    <li><strong>Preparación y producción del producto del trabajo:</strong> se agrupan las actividades necesarias
+                    <li><strong>Preparación y producción del producto del trabajo:</strong> se agrupan las actividades
+                        necesarias
                         para crear productos del trabajo, como modelos, documentos, registros, formatos,
                         etcétera.</li>
                 </ol>
                 <br></br>
 
-                <p>A continuacion hablaremos mas detalladamente sobre las actividades estructurales de la ingenieria del softaware.</p>
+                <p>A continuacion hablaremos mas detalladamente sobre las actividades estructurales de la ingenieria del
+                    softaware.</p>
 
                 <h3 class="titulo-centrado">Analisis</h3>
                 <p>El objetivo de esta actividad estructural de análisis es lograr una comprensión clara del
                     problema que se necesita resolver o, dicho de otro modo, de los requisitos funcionales
                     que debe cumplir la aplicación que el cliente ha encargado.
                     Esta tarea no es sencilla por diversos motivos:</p>
-                    <ul>
-                        <li>El cliente puede no tener claro qué requisitos debe satisfacer la aplicación.</li>
-                        <li>El cliente tiene claros los requisitos, pero no es capaz de expresarlos de manera
-                            comprensible para el equipo de desarrollo.</li>
-                        <li>Puede haber malentendidos entre el equipo de desarrollo y el cliente por la razón
-                            indicada en el punto anterior, por desconocimiento del problema que hay que resolver
-                            por parte del equipo de desarrollo, o por desconocimiento de lo que la tecnología
-                            puede ofrecer por parte del cliente.</li>
-                        
-                    </ul>
-                    <p>Además de los requisitos funcionales, que hacen referencia a lo que tiene que hacer la
-                        aplicación, hay otro tipo de requisitos llamados no funcionales, como los siguientes:</p>
-                    
-                    <ul>
-                        <li><strong>Fiabilidad:</strong> grado en que una aplicación funciona sin fallos.</li>
-                        <li><strong>Escalabilidad:</strong> capacidad del sistema para manejar aumentos de carga sin disminuir
-                            el rendimiento.</li>
-                        <li><strong>Extensibilidad:</strong> capacidad del software para añadir nuevas funcionalidades y componentes.</li>
-                        <li><strong>Seguridad:</strong> grado con que una aplicación protege la información contra el acceso indebido
-                            a ella.</li>
-                        <li><strong>Mantenibilidad:</strong> grado en que el software es comprendido, reparado o mejorado.</li>        
-                    </ul>
+                <ul>
+                    <li>El cliente puede no tener claro qué requisitos debe satisfacer la aplicación.</li>
+                    <li>El cliente tiene claros los requisitos, pero no es capaz de expresarlos de manera
+                        comprensible para el equipo de desarrollo.</li>
+                    <li>Puede haber malentendidos entre el equipo de desarrollo y el cliente por la razón
+                        indicada en el punto anterior, por desconocimiento del problema que hay que resolver
+                        por parte del equipo de desarrollo, o por desconocimiento de lo que la tecnología
+                        puede ofrecer por parte del cliente.</li>
 
-                    <p>Antes de elaborar los modelos que son el resultado de la fase de análisis, es necesaria
-                        una tarea de comunicación con el cliente, para la que se pueden emplear distintas técnicas,
-                        como:</p>
+                </ul>
+                <p>Además de los requisitos funcionales, que hacen referencia a lo que tiene que hacer la
+                    aplicación, hay otro tipo de requisitos llamados no funcionales, como los siguientes:</p>
 
-                    <ol>
-                        <li><strong>Entrevistas:</strong> es la técnica más tradicional. Es similar a una entrevista periodística en
-                            la que el analista entrevista, uno a uno, a los futuros usuarios del software.</li>
-                        <li><strong>Desarrollo conjunto de aplicaciones</strong> se crea un equipo de analistas y usuarios que se reúnen para trabajar
-                            conjuntamente en la determinación de las necesidades de los usuarios.</li>
-                        <li><strong>Desarrollo de un prototipo:</strong> consiste en construir un modelo o maqueta del sistema
-                            que permite ver a los usuarios las características del sistema que desean obtener.
-                            El prototipo se puede o bien usar solo para este fin y se desecha, o bien se puede
-                            mejorar para convertirlo en el producto final.</li>
-                    </ol>
+                <ul>
+                    <li><strong>Fiabilidad:</strong> grado en que una aplicación funciona sin fallos.</li>
+                    <li><strong>Escalabilidad:</strong> capacidad del sistema para manejar aumentos de carga sin
+                        disminuir
+                        el rendimiento.</li>
+                    <li><strong>Extensibilidad:</strong> capacidad del software para añadir nuevas funcionalidades y
+                        componentes.</li>
+                    <li><strong>Seguridad:</strong> grado con que una aplicación protege la información contra el acceso
+                        indebido
+                        a ella.</li>
+                    <li><strong>Mantenibilidad:</strong> grado en que el software es comprendido, reparado o mejorado.
+                    </li>
+                </ul>
 
-                    <p>Como resultado de esta fase, se debe obtener un documento llamado especificación de
-                        requisitos del software (ERS), que sirve de base para la siguiente etapa de diseño.
-                        En esta etapa, se crearán tanto diagramas de clases como diagramas de casos de uso.</p>
-                        <img class="imagen-centrada" src="../imagenes/imagenanalisis.png" alt="Imagen analisis">
+                <p>Antes de elaborar los modelos que son el resultado de la fase de análisis, es necesaria
+                    una tarea de comunicación con el cliente, para la que se pueden emplear distintas técnicas,
+                    como:</p>
 
-                    <br></br>
-                        <h3 class="titulo-centrado">DISEÑO</h3>
-                        <p>En la etapa de diseño, se determina cómo
-                        se ha de solucionar dicho problema. Para ello, se partirá de los diagramas obtenidos en
-                        la etapa de análisis, refinando algunos de ellos y creando otros que indiquen los pasos
-                        que hay que dar para responder a los requisitos establecidos.</p>
-                        
-                        <h3 class="titulo-centrado">PROGRAMACIÓN</h3>
-                        <p>Se parte del diseño detallado y, en esta fase, se escribe el código fuente correspondiente
-                            siguiendo las normas del lenguaje de programación de alto nivel seleccionado.
-                            Es habitual que se establezcan determinadas normas a la hora de escribir el código fuente
-                            con el fin de que los programas tengan un aspecto homogéneo y sean fáciles de entender y, por tanto, de modificar, sobre todo si se tiene en cuenta la relevancia de las
-                            posteriores tareas de mantenimiento. Normalmente, se establecen normas en relación
-                            con los siguientes elementos:</p>
-                            <ul>
-                                <li><strong>Comentarios:</strong> se suelen escribir al comienzo de determinadas partes del código
-                                    para describir su razón de ser (al comienzo de una clase, al indicar cada atributo de
-                                    una clase, al comienzo de cada método, etc.) y para aclarar determinadas porciones
-                                    de código por su alto nivel de complejidad.</li>
-                                <li><strong>Declaraciones</strong> de variables y de parámetros de métodos.</li>
-                                <li><strong>Nombres</strong> de clases, atributos, métodos, variables, constantes, etc.</li>
-                                <li><strong>Líneas en blanco</strong> entre clases, métodos, etc.</li>
-                                <li><strong>Sangrados</strong> para facilitar la legibilidad del código.</li>
-                            </ul>
+                <ol>
+                    <li><strong>Entrevistas:</strong> es la técnica más tradicional. Es similar a una entrevista
+                        periodística en
+                        la que el analista entrevista, uno a uno, a los futuros usuarios del software.</li>
+                    <li><strong>Desarrollo conjunto de aplicaciones</strong> se crea un equipo de analistas y usuarios
+                        que se reúnen para trabajar
+                        conjuntamente en la determinación de las necesidades de los usuarios.</li>
+                    <li><strong>Desarrollo de un prototipo:</strong> consiste en construir un modelo o maqueta del
+                        sistema
+                        que permite ver a los usuarios las características del sistema que desean obtener.
+                        El prototipo se puede o bien usar solo para este fin y se desecha, o bien se puede
+                        mejorar para convertirlo en el producto final.</li>
+                </ol>
 
-                        <h3 class="titulo-centrado">PRUEBAS</h3>
-                        <p>El objetivo de esta actividad es detectar errores en el software antes de que este sea entregado
-                            al cliente. La estrategia que se aplica en dichas pruebas consiste en realizarlas
-                            desde los elementos más pequeños hasta los más grandes, es decir, se comienza probando
-                            pequeños componentes de software hasta llegar al programa completo.
-                            El objetivo de las pruebas es doble: verificar y validar el software.</p>
-                            <ul>
-                                <li>Por medio de la verificación, se determina si el software se ha construido correctamente,
-                                    es decir, si las tareas que realiza las lleva a cabo de manera adecuada.</li>
-                                <li>La validación consiste en comprobar si el software es realmente el que el usuario
-                                    desea, o sea, si el sistema hace lo que quiere el usuario.</li>
-                            </ul>
-                            <p>Existen dos tipos de técnicas de pruebas:</p>
-                            <ol><strong>pruebas de caja blanca o pruebas estructurales:</strong> se examinan los detalles de cada
-                                módulo, para lo que se debe disponer del código fuente. Así, se prueban los diferentes
-                                caminos a través de este código, así como los bucles, las variables, etcétera.</ol>
-                                <br>
-                            <ol><strong>pruebas de caja negra o pruebas funcionales:</strong> el software se considera como
-                                una caja negra que recibe una serie de entradas y proporciona una serie de salidas.
-                                El objetivo es validar los requisitos funcionales.</ol>
-                                <img class="imagen-centrada" src="../imagenes/imagenpruebascajas.png" alt="Imagen prueba cajas">
+                <p>Como resultado de esta fase, se debe obtener un documento llamado especificación de
+                    requisitos del software (ERS), que sirve de base para la siguiente etapa de diseño.
+                    En esta etapa, se crearán tanto diagramas de clases como diagramas de casos de uso.</p>
+                <img class="imagen-centrada" src="../imagenes/imagenanalisis.png" alt="Imagen analisis">
 
-                                <h3 class="titulo-centrado">EXPLOTACIÓN</h3>
-                                <p>Una vez que se ha probado el software, se han corregido los errores detectados y se ha
-                                    documentado todo el proceso, se lleva a cabo la instalación y la puesta a punto y en funcionamiento
-                                    de la aplicación en las instalaciones del cliente. Durante esta fase, es necesaria
-                                    la presencia del cliente. Por lo tanto, las tareas de esta fase son:</p>
-                                    <ul>
-                                        <li>Se instalan los programas en el equipo o los equipos del cliente.</li>
-                                        <li>Se llevan a cabo las comprobaciones conocidas como pruebas beta, que se realizan
-                                            en las instalaciones del cliente.</li>
-                                        <li>Se realiza la configuración del sistema y se comprueba que la aplicación funciona
-                                            de manera adecuada.</li>
-                                        <li>Una vez completados los pasos anteriores, la aplicación ya pasa a la fase de producción
-                                            normal, esto es, a su uso por parte del usuario final.</li>
-                                    </ul>
+                <br></br>
+                <h3 class="titulo-centrado">DISEÑO</h3>
+                <p>En la etapa de diseño, se determina cómo
+                    se ha de solucionar dicho problema. Para ello, se partirá de los diagramas obtenidos en
+                    la etapa de análisis, refinando algunos de ellos y creando otros que indiquen los pasos
+                    que hay que dar para responder a los requisitos establecidos.</p>
 
-                                <h3 class="titulo-centrado">MANTENIMIENTO</h3>
-                                <p>Hay diferentes tipos de mantenimiento en función del motivo que lo origina:</p>
-                                <ul>
-                                    <li><strong>Mantenimiento correctivo:</strong> este se debe a que el cliente detecta errores en el software
-                                        a pesar de las pruebas que se realizaron, y consiste en corregir estos errores.</li>
-                                    <li><strong>Mantenimiento adaptativo:</strong> en muchos casos el software deba adaptarse a cambios
-                                        del entorno externo porque, por ejemplo, se tiene un nuevo sistema operativo. Este
-                                        tipo de mantenimiento se realiza frecuentemente por los rápidos avances en el ámbito
-                                        de la informática.</li>
-                                    <li><strong>Mantenimiento perfectivo:</strong> es muy común que, con el paso del tiempo, el cliente solicite
-                                        ampliaciones funcionales, es decir, desee que la aplicación incorpore nuevos
-                                        requisitos funcionales. Asi mismo, es posible que se deseen mejoras en requisitos
-                                        no funcionales, por ejemplo, que el programa se ejecute más rápidamente o que se
-                                        incremente la seguridad del sistema.</li>
-                                </ul>
-                                <br></br>
+                <h3 class="titulo-centrado">PROGRAMACIÓN</h3>
+                <p>Se parte del diseño detallado y, en esta fase, se escribe el código fuente correspondiente
+                    siguiendo las normas del lenguaje de programación de alto nivel seleccionado.
+                    Es habitual que se establezcan determinadas normas a la hora de escribir el código fuente
+                    con el fin de que los programas tengan un aspecto homogéneo y sean fáciles de entender y, por tanto,
+                    de modificar, sobre todo si se tiene en cuenta la relevancia de las
+                    posteriores tareas de mantenimiento. Normalmente, se establecen normas en relación
+                    con los siguientes elementos:</p>
+                <ul>
+                    <li><strong>Comentarios:</strong> se suelen escribir al comienzo de determinadas partes del código
+                        para describir su razón de ser (al comienzo de una clase, al indicar cada atributo de
+                        una clase, al comienzo de cada método, etc.) y para aclarar determinadas porciones
+                        de código por su alto nivel de complejidad.</li>
+                    <li><strong>Declaraciones</strong> de variables y de parámetros de métodos.</li>
+                    <li><strong>Nombres</strong> de clases, atributos, métodos, variables, constantes, etc.</li>
+                    <li><strong>Líneas en blanco</strong> entre clases, métodos, etc.</li>
+                    <li><strong>Sangrados</strong> para facilitar la legibilidad del código.</li>
+                </ul>
 
-                                <h2>Roles que intervienen en el proceso de desarrollo de software</h2>
-                                <br></br>
-                                <ul><strong>-Jefe de proyecto:</strong> lleva a cabo la tarea de planificación del proyecto</ul>
-                                <ul><strong>-Expertos del dominio:</strong> son personas que trabajan en la empresa u organismo para
-                                    el que hay que desarrollar la aplicación y que conocen el dominio del problema,</ul>
-                                <ul><strong>-Analista:</strong> su cometido es la tarea de análisis,</ul>
-                                <ul><strong>-Arquitecto:</strong> a partir del trabajo realizado por el analista, debe definir las líneas
-                                    maestras del diseño, estableciendo la arquitectura del sistema,</ul>
-                                <ul><strong>-Diseñador</strong> parte de un subconjunto de los requisitos definidos por el analista y de
-                                    la arquitectura del sistema para diseñar las partes del sistema que implementan
-                                    esos requisitos hasta un nivel de detalle suficiente para acometer la tarea de programación.</ul>
-                                <ul><strong>-Programador:</strong>se encarga de la tarea de programación.</ul>
-                                <ul><strong>-Probador:</strong>se encarga de la tarea de pruebas</ul>
-                                <ul><strong>-Encargado de la implantación:</strong> es el encargado de que se realice el empaquetado
-                                    de los programas y su instalación en el entorno de trabajo del cliente.</ul>
+                <h3 class="titulo-centrado">PRUEBAS</h3>
+                <p>El objetivo de esta actividad es detectar errores en el software antes de que este sea entregado
+                    al cliente. La estrategia que se aplica en dichas pruebas consiste en realizarlas
+                    desde los elementos más pequeños hasta los más grandes, es decir, se comienza probando
+                    pequeños componentes de software hasta llegar al programa completo.
+                    El objetivo de las pruebas es doble: verificar y validar el software.</p>
+                <ul>
+                    <li>Por medio de la verificación, se determina si el software se ha construido correctamente,
+                        es decir, si las tareas que realiza las lleva a cabo de manera adecuada.</li>
+                    <li>La validación consiste en comprobar si el software es realmente el que el usuario
+                        desea, o sea, si el sistema hace lo que quiere el usuario.</li>
+                </ul>
+                <p>Existen dos tipos de técnicas de pruebas:</p>
+                <ol><strong>pruebas de caja blanca o pruebas estructurales:</strong> se examinan los detalles de cada
+                    módulo, para lo que se debe disponer del código fuente. Así, se prueban los diferentes
+                    caminos a través de este código, así como los bucles, las variables, etcétera.</ol>
+                <br>
+                <ol><strong>pruebas de caja negra o pruebas funcionales:</strong> el software se considera como
+                    una caja negra que recibe una serie de entradas y proporciona una serie de salidas.
+                    El objetivo es validar los requisitos funcionales.</ol>
+                <img class="imagen-centrada" src="../imagenes/imagenpruebascajas.png" alt="Imagen prueba cajas">
+
+                <h3 class="titulo-centrado">EXPLOTACIÓN</h3>
+                <p>Una vez que se ha probado el software, se han corregido los errores detectados y se ha
+                    documentado todo el proceso, se lleva a cabo la instalación y la puesta a punto y en funcionamiento
+                    de la aplicación en las instalaciones del cliente. Durante esta fase, es necesaria
+                    la presencia del cliente. Por lo tanto, las tareas de esta fase son:</p>
+                <ul>
+                    <li>Se instalan los programas en el equipo o los equipos del cliente.</li>
+                    <li>Se llevan a cabo las comprobaciones conocidas como pruebas beta, que se realizan
+                        en las instalaciones del cliente.</li>
+                    <li>Se realiza la configuración del sistema y se comprueba que la aplicación funciona
+                        de manera adecuada.</li>
+                    <li>Una vez completados los pasos anteriores, la aplicación ya pasa a la fase de producción
+                        normal, esto es, a su uso por parte del usuario final.</li>
+                </ul>
+
+                <h3 class="titulo-centrado">MANTENIMIENTO</h3>
+                <p>Hay diferentes tipos de mantenimiento en función del motivo que lo origina:</p>
+                <ul>
+                    <li><strong>Mantenimiento correctivo:</strong> este se debe a que el cliente detecta errores en el
+                        software
+                        a pesar de las pruebas que se realizaron, y consiste en corregir estos errores.</li>
+                    <li><strong>Mantenimiento adaptativo:</strong> en muchos casos el software deba adaptarse a cambios
+                        del entorno externo porque, por ejemplo, se tiene un nuevo sistema operativo. Este
+                        tipo de mantenimiento se realiza frecuentemente por los rápidos avances en el ámbito
+                        de la informática.</li>
+                    <li><strong>Mantenimiento perfectivo:</strong> es muy común que, con el paso del tiempo, el cliente
+                        solicite
+                        ampliaciones funcionales, es decir, desee que la aplicación incorpore nuevos
+                        requisitos funcionales. Asi mismo, es posible que se deseen mejoras en requisitos
+                        no funcionales, por ejemplo, que el programa se ejecute más rápidamente o que se
+                        incremente la seguridad del sistema.</li>
+                </ul>
+                <br></br>
+
+                <h2>Roles que intervienen en el proceso de desarrollo de software</h2>
+                <br></br>
+                <ul><strong>-Jefe de proyecto:</strong> lleva a cabo la tarea de planificación del proyecto</ul>
+                <ul><strong>-Expertos del dominio:</strong> son personas que trabajan en la empresa u organismo para
+                    el que hay que desarrollar la aplicación y que conocen el dominio del problema,</ul>
+                <ul><strong>-Analista:</strong> su cometido es la tarea de análisis,</ul>
+                <ul><strong>-Arquitecto:</strong> a partir del trabajo realizado por el analista, debe definir las
+                    líneas
+                    maestras del diseño, estableciendo la arquitectura del sistema,</ul>
+                <ul><strong>-Diseñador</strong> parte de un subconjunto de los requisitos definidos por el analista y de
+                    la arquitectura del sistema para diseñar las partes del sistema que implementan
+                    esos requisitos hasta un nivel de detalle suficiente para acometer la tarea de programación.</ul>
+                <ul><strong>-Programador:</strong>se encarga de la tarea de programación.</ul>
+                <ul><strong>-Probador:</strong>se encarga de la tarea de pruebas</ul>
+                <ul><strong>-Encargado de la implantación:</strong> es el encargado de que se realice el empaquetado
+                    de los programas y su instalación en el entorno de trabajo del cliente.</ul>
 
             </div>
-            
-            
+
+
         </div>
-    
-           
+
+
         <br></br>
         <!--CUARTO APARTADO -->
         <div class="contenedor2">
             <div class="contenedor-ajustartexto">
                 <h1 class="titulo-centrado">Modelos de ciclo de vida del software</h1>
-            <p>Piattini et al. (2007) proporcionan la siguiente definición para el concepto de ciclo de
-                vida: «el ciclo de vida del software es la descripción de las distintas formas de desarrollo
-                de un proyecto o aplicación informática, es decir, la orientación que debe seguirse para
-                obtener, a partir de los requerimientos del cliente, sistemas que puedan ser utilizados
-                por dicho cliente».
-                Un ciclo de vida determina el orden en el que se deben llevar a cabo las tareas en el proceso
-                de desarrollo de software y los criterios que se deben cumplir para realizar el paso de una tarea a la siguiente. 
-                El ciclo de vida que surgió en primer lugar es el llamado ciclo de vida clásico o modelo
-                en cascada. Posteriormente, se desarrollaron otros modelos: de proceso incremental, de proceso evolutivo y de desarrollo ágil. En los siguientes apartados, se describe cada uno
-                de ellos.</p>
+                <p>Piattini et al. (2007) proporcionan la siguiente definición para el concepto de ciclo de
+                    vida: «el ciclo de vida del software es la descripción de las distintas formas de desarrollo
+                    de un proyecto o aplicación informática, es decir, la orientación que debe seguirse para
+                    obtener, a partir de los requerimientos del cliente, sistemas que puedan ser utilizados
+                    por dicho cliente».
+                    Un ciclo de vida determina el orden en el que se deben llevar a cabo las tareas en el proceso
+                    de desarrollo de software y los criterios que se deben cumplir para realizar el paso de una tarea a
+                    la siguiente.
+                    El ciclo de vida que surgió en primer lugar es el llamado ciclo de vida clásico o modelo
+                    en cascada. Posteriormente, se desarrollaron otros modelos: de proceso incremental, de proceso
+                    evolutivo y de desarrollo ágil. En los siguientes apartados, se describe cada uno
+                    de ellos.</p>
 
-        <ul>
-            <li><strong> MODELO EN CASCADA:</strong> El modelo en cascada, también llamado ciclo de vida clásico, es el modelo más primitivo
-                de ciclo de vida, pero ha resultado fundamental para el progreso posterior porque en él
-                se identifican ya prácticamente todas las clases de actividades distintas que intervienen
-                en el desarrollo y explotación de software. 
-                En este modelo, se propone un enfoque sistemático y secuencial para el desarrollo de software, comenzando con el análisis y continuando a través del diseño, la programación
-                y las pruebas hasta llegar al software terminado, sobre el que se pueden aplicar también operaciones de mantenimiento. 
-                Se plantea un flujo secuencial de las actividades y para pasar de una fase a la siguiente
-                es necesario cumplir ciertos objetivos. Para detectar los errores lo antes posible y evitar que se propaguen a fases posteriores, se establece un proceso de revisión al completar
-                cada fase, antes de pasar a la siguiente. Esta revisión se realiza fundamentalmente sobre la documentación producida en esa fase y se hace de una manera formal. Si, a pesar
-                de todo, durante la realización de una fase, se detectan errores en el resultado de
-                fases anteriores, será necesario rehacer parte del trabajo volviendo a un punto anterior del ciclo de vida,</li>
-                <p>Por ejemplo, si en la etapa de mantenimiento, se detecta que se cometió algún error en el diseño, será necesario
-                    corregir dicho error de diseño y realizar cambios en las etapas posteriores de programación
-                    y pruebas.</p>
+                <ul>
+                    <li><strong> MODELO EN CASCADA:</strong> El modelo en cascada, también llamado ciclo de vida
+                        clásico, es el modelo más primitivo
+                        de ciclo de vida, pero ha resultado fundamental para el progreso posterior porque en él
+                        se identifican ya prácticamente todas las clases de actividades distintas que intervienen
+                        en el desarrollo y explotación de software.
+                        En este modelo, se propone un enfoque sistemático y secuencial para el desarrollo de software,
+                        comenzando con el análisis y continuando a través del diseño, la programación
+                        y las pruebas hasta llegar al software terminado, sobre el que se pueden aplicar también
+                        operaciones de mantenimiento.
+                        Se plantea un flujo secuencial de las actividades y para pasar de una fase a la siguiente
+                        es necesario cumplir ciertos objetivos. Para detectar los errores lo antes posible y evitar que
+                        se propaguen a fases posteriores, se establece un proceso de revisión al completar
+                        cada fase, antes de pasar a la siguiente. Esta revisión se realiza fundamentalmente sobre la
+                        documentación producida en esa fase y se hace de una manera formal. Si, a pesar
+                        de todo, durante la realización de una fase, se detectan errores en el resultado de
+                        fases anteriores, será necesario rehacer parte del trabajo volviendo a un punto anterior del
+                        ciclo de vida,</li>
+                    <p>Por ejemplo, si en la etapa de mantenimiento, se detecta que se cometió algún error en el diseño,
+                        será necesario
+                        corregir dicho error de diseño y realizar cambios en las etapas posteriores de programación
+                        y pruebas.</p>
                     <img class="imagen-centrada" src="../imagenes/imagenmodelocascada.png" alt="Imagen modelo cascada">
 
 
-            <li><strong>MODELO DE PROCESO INCREMENTAL:</strong> Uno de los inconvenientes más importantes del modelo en cascada es que el cliente no
-                dispone de una versión funcional del sistema hasta muy tarde. En muchos casos puede resultar
-                más conveniente proporcionar cierta funcionalidad parcial del software al cliente y
-                aumentarla en entregas posteriores. De esta manera, se concibe el desarrollo de software
-                como un proceso en el que se van produciendo diversos incrementos o entregables. Para la
-                elaboración de cada incremento, se siguen las actividades del modelo en cascada que se
-                indicaron anteriormente.</li>
-                <img class="imagen-centrada" src="../imagenes/imagenmodeloproceso.png" alt="Imagen modelo incremental">
-                <p>VENTAJAS DE ESTE MODELO:
+                    <li><strong>MODELO DE PROCESO INCREMENTAL:</strong> Uno de los inconvenientes más importantes del
+                        modelo en cascada es que el cliente no
+                        dispone de una versión funcional del sistema hasta muy tarde. En muchos casos puede resultar
+                        más conveniente proporcionar cierta funcionalidad parcial del software al cliente y
+                        aumentarla en entregas posteriores. De esta manera, se concibe el desarrollo de software
+                        como un proceso en el que se van produciendo diversos incrementos o entregables. Para la
+                        elaboración de cada incremento, se siguen las actividades del modelo en cascada que se
+                        indicaron anteriormente.</li>
+                    <img class="imagen-centrada" src="../imagenes/imagenmodeloproceso.png"
+                        alt="Imagen modelo incremental">
+                    <p>VENTAJAS DE ESTE MODELO:
                     <ul>
                         <li>Reduce los riesgos de retrasos, de cambios de requisitos y problemas de aceptación.</li>
                         <li>Los entregables intermedios facilitan la retroalimentación por parte de los clientes,
                             lo cual resulta ventajoso para evitar problemas mayores en los siguientes entregables.</li>
                         <li>Permiten al usuario validar el sistema a medida que se construye.</li>
                     </ul>
-                </p>
+                    </p>
 
-            <li><strong>MODELO DE PROCESO EVOLUTIVO</strong> Los modelos de proceso evolutivo tienen su razón de ser en el hecho de que «el software,
-                como todos los sistemas complejos, evoluciona en el tiempo. Es frecuente que los requerimientos
-                del negocio y del producto cambien conforme avanza el desarrollo, lo que hace
-                que no sea realista trazar una trayectoria rectilínea hacia el producto final [...] Se comprende
-                bien el conjunto de requerimientos o el producto básico, pero los detalles del producto
-                o extensiones del sistema aún están por definirse» </li>
-                <p>Estos modelos son iterativos y se caracterizan por el desarrollo de versiones cada vez más
-                    completas del software. Se presentan a continuación dos modelos de proceso evolutivo:</p>
+                    <li><strong>MODELO DE PROCESO EVOLUTIVO</strong> Los modelos de proceso evolutivo tienen su razón de
+                        ser en el hecho de que «el software,
+                        como todos los sistemas complejos, evoluciona en el tiempo. Es frecuente que los requerimientos
+                        del negocio y del producto cambien conforme avanza el desarrollo, lo que hace
+                        que no sea realista trazar una trayectoria rectilínea hacia el producto final [...] Se comprende
+                        bien el conjunto de requerimientos o el producto básico, pero los detalles del producto
+                        o extensiones del sistema aún están por definirse» </li>
+                    <p>Estos modelos son iterativos y se caracterizan por el desarrollo de versiones cada vez más
+                        completas del software. Se presentan a continuación dos modelos de proceso evolutivo:</p>
                     <ul>
-                        <li><strong>Construcción de prototipos</strong> Un prototipo se puede definir como un sistema auxiliar que permite probar experimentalmente
+                        <li><strong>Construcción de prototipos</strong> Un prototipo se puede definir como un sistema
+                            auxiliar que permite probar experimentalmente
                             ciertas soluciones parciales a las necesidades del usuario o a los requisitos del
                             sistema. Puede tratarse de un modelo que describa la interacción hombre-máquina, de
                             manera que facilite al usuario la comprensión de cómo se producirá la interacción, o un
                             programa que implemente algunos subconjuntos de la funcionalidad de la aplicación. Es
                             conveniente seguir este modelo de ciclo de vida cuando el cliente es capaz de definir un
-                            conjunto de objetivos generales para el software, pero no puede identificar los requerimientos
+                            conjunto de objetivos generales para el software, pero no puede identificar los
+                            requerimientos
                             en detalle, o cuando las personas desarrolladoras tienen dudas considerables
                             sobre determinados aspectos importantes del desarrollo, como la eficiencia de un algoritmo,
                             en qué medida la aplicación se podrá usar en un determinado sistema operativo o
@@ -861,37 +913,41 @@
                             este modelo de ciclo de vida de manera aislada, pero es más común emplearlo como
                             una técnica que puede implementarse en el contexto de cualquiera de los modelos de ciclo
                             de vida descritos en este tema.</li>
-                            <p>En este modelo, se construye el software a partir de versiones cada vez más completas,
-                                de manera que se realizan una serie de tareas varias veces. En la primera iteración, se
-                                llevan a cabo las tareas (planificación, modelado, construcción, despliegue, evaluación y comunicación) para construir una primera versión del prototipo. La realización
-                                de todas estas actividades constituye una iteración, luego se vuelven a realizar estas mismas tareas en la segunda iteración para obtener una segunda versión del prototipo
-                                más completa, y así sucesivamente.</p>
-                                <img class="imagen-centrada" src="../imagenes/imagenmodelado.png" alt="Imagen modelo">
+                        <p>En este modelo, se construye el software a partir de versiones cada vez más completas,
+                            de manera que se realizan una serie de tareas varias veces. En la primera iteración, se
+                            llevan a cabo las tareas (planificación, modelado, construcción, despliegue, evaluación y
+                            comunicación) para construir una primera versión del prototipo. La realización
+                            de todas estas actividades constituye una iteración, luego se vuelven a realizar estas
+                            mismas tareas en la segunda iteración para obtener una segunda versión del prototipo
+                            más completa, y así sucesivamente.</p>
+                        <img class="imagen-centrada" src="../imagenes/imagenmodelado.png" alt="Imagen modelo">
 
-                        <li><strong>Modelo en espiral</strong> Este modelo evolutivo fue diseñado para cubrir las mejores características tanto del modelo
+                        <li><strong>Modelo en espiral</strong> Este modelo evolutivo fue diseñado para cubrir las
+                            mejores características tanto del modelo
                             en cascada como del modelo de construcción de prototipos, añadiendo un nuevo
                             elemento, que es el análisis de riesgo, dentro de la actividad estructural de planificación.
                             Como modelo de desarrollo evolutivo que es, el software se desarrolla en una serie de
                             entregas que se pueden representar como iteraciones o vueltas alrededor de una espiral.
                             Durante las primeras iteraciones lo que se entrega puede ser un modelo o prototipo.</li>
-                            <img class="imagen-centrada" src="../imagenes/imagenmodeloespiral.png" alt="Imagen modelo espiral">
-                            <p>La principal ventaja de este modelo es que la consideración de los riesgos o problemas
-                                que pueden afectar al desarrollo del software en diferentes momentos permite que tanto
-                                quienes encargaron el software como los que lo desarrollan sean conscientes de los
-                                problemas que pueden presentarse y sean capaces de reaccionar en caso de que estos
-                                ocurran. Además, si hay cierta inseguridad en cuanto a sus requisitos, se puede aplicar
-                                el enfoque de construcción de prototipos para eliminar ese riesgo.
-                                El principal inconveniente de este modelo es, como indica Pressman (2010), que
-                                «requiere mucha experiencia en la evaluación del riesgo y se basa en ella para llegar al
-                                éxito. No hay duda de que habrá problemas si algún riesgo importante no se descubre y
-                                administra».</p>
+                        <img class="imagen-centrada" src="../imagenes/imagenmodeloespiral.png"
+                            alt="Imagen modelo espiral">
+                        <p>La principal ventaja de este modelo es que la consideración de los riesgos o problemas
+                            que pueden afectar al desarrollo del software en diferentes momentos permite que tanto
+                            quienes encargaron el software como los que lo desarrollan sean conscientes de los
+                            problemas que pueden presentarse y sean capaces de reaccionar en caso de que estos
+                            ocurran. Además, si hay cierta inseguridad en cuanto a sus requisitos, se puede aplicar
+                            el enfoque de construcción de prototipos para eliminar ese riesgo.
+                            El principal inconveniente de este modelo es, como indica Pressman (2010), que
+                            «requiere mucha experiencia en la evaluación del riesgo y se basa en ella para llegar al
+                            éxito. No hay duda de que habrá problemas si algún riesgo importante no se descubre y
+                            administra».</p>
 
                     </ul>
             </div>
 
 
         </div>
-            
+
 
         <br></br>
         <br></br>
@@ -900,27 +956,31 @@
         <div class="contenedor1">
             <div class="contenedor-ajustartexto">
                 <h1 class="titulo-centrado">Metodologías de desarrollo de softaware actuales</h1>
-                <p>metodología es un conjunto de filosofías, fases, procedimientos, reglas, técnicas, herramientas, documentación
+                <p>metodología es un conjunto de filosofías, fases, procedimientos, reglas, técnicas, herramientas,
+                    documentación
                     y aspectos de formación para los desarrolladores de sistemas de información». Una
                     metodología puede seguir uno o varios modelos de ciclo de vida, esto es, el ciclo de vida
                     indica qué es lo que hay obtener a lo largo del desarrollo del proyecto, pero no cómo, que
                     es lo que indicará la metodología.</p>
                 <p>Las metodologías de desarrollo de software han ido evolucionando a lo largo del tiempo.
                     Así, se identifican tres periodos de tiempo:</p>
-                    <ol>
-                        <li><strong>Desarrollo convencional:</strong> durante los primeros años del desarrollo de software las
-                            prácticas de desarrollo eran totalmente artesanales y no se seguía ninguna metodología,
-                            lo que acarreaba multitud de problemas y desembocó en lo que se llamó la
-                            crisis del software.</li>
-                        <li><strong>Metodologías estructuradas:</strong> la primera respuesta a esta crisis fue la regulación de
-                            la tarea de programación con la difusión de la programación estructurada, a la que
-                            siguió el surgimiento de métodos para el diseño y análisis estructurado, dando lugar
-                            a las metodologías estructuradas, que abarcan la totalidad del ciclo de vida del
-                            software.</li>
-                        <li><strong>Metodologías orientadas a objetos:</strong> en la década de los 80 del siglo pasado surgieron,
-                            en primer lugar, los lenguajes orientados a objetos y más tarde, métodos para
-                            el diseño y análisis orientados a objetos.</li>
-                    </ol>
+                <ol>
+                    <li><strong>Desarrollo convencional:</strong> durante los primeros años del desarrollo de software
+                        las
+                        prácticas de desarrollo eran totalmente artesanales y no se seguía ninguna metodología,
+                        lo que acarreaba multitud de problemas y desembocó en lo que se llamó la
+                        crisis del software.</li>
+                    <li><strong>Metodologías estructuradas:</strong> la primera respuesta a esta crisis fue la
+                        regulación de
+                        la tarea de programación con la difusión de la programación estructurada, a la que
+                        siguió el surgimiento de métodos para el diseño y análisis estructurado, dando lugar
+                        a las metodologías estructuradas, que abarcan la totalidad del ciclo de vida del
+                        software.</li>
+                    <li><strong>Metodologías orientadas a objetos:</strong> en la década de los 80 del siglo pasado
+                        surgieron,
+                        en primer lugar, los lenguajes orientados a objetos y más tarde, métodos para
+                        el diseño y análisis orientados a objetos.</li>
+                </ol>
 
                 <p>Recientemente, se han desarrollado metodologías de desarrollo novedosas conocidas
                     como modelos de desarrollo ágil, que intentan simplificar las metodologías existentes,
@@ -932,218 +992,247 @@
 
 
         </div>
-            
-
-            
-                
-
-                
-             <!--SEXTO APARTADO -->
-             <div class="contenedor2">
-                <div class="contenedor-ajustartexto">
-                    <h1 class="titulo-centrado">El proceso unificado de Rational (RUP)</h1>
-                    <p>El proceso RUP se puede describir en función de dos dimensiones:</p>
-                    <ul><strong>-Dimensión temporal:</strong> se expresa en términos de ciclos, fases, iteraciones e hitos.</ul>
-                    <ul><strong>-Dimensión estática:</strong> se expresa en términos de actividades (activities), productos
-                        intermedios (artifacts), perfiles de trabajo o roles (workers) y flujos de trabajo
-                        (workflow).</ul>
-                    
-                        <p>El ciclo de vida se divide en ciclos entendiendo estos
-                            como vueltas alrededor de una espiral, y estas, a su vez, como los periodos de tiempo
-                            en los que se trabaja sobre una versión completa del sistema. Cada ciclo se compone
-                            de cuatro fases que se realizan secuencialmente:</p>
-                            <ul>
-                                <li><strong>Fase de comienzo (inception):</strong> el objetivo de esta fase es estudiar la viabilidad del
-                                    sistema. Para ello, se establece el objetivo del sistema y se delimita su alcance,
-                                    definiendo, además, las estimaciones de recursos y un plan de tiempos general en
-                                    el que se establecen los hitos principales, las previsiones financieras, los riesgos
-                                    del proyecto y los criterios para su éxito.</li>
-                                <li><strong>Fase de elaboración (elaboration):</strong> los objetivos de esta fase son analizar el dominio
-                                    del problema, establecer una base de la arquitectura software, desarrollar el plan del
-                                    proyecto y eliminar los riesgos más importantes.</li>
-                                <li><strong>Fase de construcción (construction):</strong> durante esta fase se desarrolla el sistema de
-                                    forma iterativa e incremental hasta que esté preparado para su puesta en funcionamiento.
-                                    Para cada iteración, se seleccionan algunos casos de uso (requisitos),
-                                    se refina su análisis y diseño y se procede a su implementación y pruebas.</li>
-                                <li><strong>Fase de transición (transition)</strong> el propósito de esta fase es poner en funcionamiento
-                                    el sistema y ponerlo a disposición de los usuarios.</li>
-                            </ul>
-                                    <p>Cada una de las fases de RUP puede descomponerse en iteraciones. Una iteración es un
-                                        periodo de tiempo en el que se realiza un conjunto completo de actividades de desarrollo.
-                                        El sistema, por lo tanto, se va desarrollando incrementalmente de iteración en iteración.
-                                        Una nueva iteración produce una nueva versión que proporciona al software mayor
-                                        funcionalidad y es más refinada.</p>
-                                    <p>El proceso RUP describe los perfiles o papeles de trabajo
-                                        (quién) que realizan productos intermedios (qué) como resultado de realizar un conjunto
-                                        de actividades (cómo) por medio de un flujo de trabajo predefinido (cuándo). De esta
-                                        forma, el RUP establece cuatro elementos de modelado principales:</p>
-                                        <ul>
-                                            <li><strong>Perfiles o papeles de trabajo (workers):</strong> mediante el papel o rol de trabajo se define
-                                                el comportamiento y la responsabilidad de una persona o un grupo de personas
-                                                que trabajan como una unidad y en equipo.</li>
-                                            <li><strong>Actividad (activity):</strong> es una unidad de trabajo que lleva a cabo un individuo con un
-                                                rol determinado. Por ejemplo, para el papel del jefe o jefa de proyecto, una actividad
-                                                podría ser planificar una iteración.</li>
-                                            <li><strong>Producto intermedio (artifact):</strong> son elementos de información producidos, modificados
-                                                o usados para el desarrollo del software.</li>
-                                            <li><strong>Flujos de trabajo (workflows):</strong>son secuencias de actividades para producir productos
-                                                intermedios. RUP define nueve flujos de trabajo agrupados en dos clases principales:
-                                            <ul>-FLUJOS DE INGENIERIA </ul>
-                                                <ol>
-                                                    <li><strong>Modelado del negocio (business modelling):</strong> el objetivo es entender el conjunto
-                                                        de procesos de negocio que aparecen dentro de la empresa como un paso
-                                                        previo a la recogida de requisitos del sistema que se debe desarrollar.</li>
-                                                    <li><strong>Requisitos (requirements):</strong> el propósito es establecer los requisitos funcionales
-                                                        (qué debe hacer el sistema) mediante casos de uso y los requisitos
-                                                        no funcionales (rendimiento, restricciones, facilidad de mantenimiento, fiabilidad,
-                                                        etc.).</li>
-                                                    <li><strong>Análisis y diseño (analysis 8: design):</strong> en esta fase se analizan los requisitos
-                                                        capturados anteriormente con el objeto de tener una comprensión y descripción
-                                                        más precisa de los mismos, se refinan y se estructuran.</li>
-                                                    <li><strong>Implementación (implementation):</strong> consiste en programar o implementar el
-                                                        sistema en términos de componentes, es decir, ficheros de código fuente,
-                                                        ejecutables, etcétera.</li>
-                                                    <li><strong>Pruebas (test):</strong>incluye crear casos de prueba (especificando qué probar y
-                                                        cómo realizar la prueba), realizar las pruebas y evaluar sus resultados.</li>
-                                                    <li><strong>Implantación (deployment):</strong>el objetivo es asegurarse de que el producto está
-                                                        preparado para ser suministrado al cliente, ajustar el producto de software a
-                                                        las necesidades del usuario y organizar su entrega y la recepción por parte
-                                                        del usuario.</li>
-                                                        <ul>-FLUJOS DE APOYO</ul>
-                                                    <li><strong>Gestión de la configuración:</strong> control de cambios sobre los productos intermedios.</li>
-                                                    <li><strong>Gestión de proyecto:</strong> planificación del proyecto, gestión de los riesgos y monitorización
-                                                        del progreso del proyecto.</li>
-                                                    <li><strong>Entorno:</strong> cubre la infraestructura necesaria para desarrollar un sistema.</li>
-                                                    <img class="imagen-centrada" src="../imagenes/imagenmodelorup.png" alt="Imagen modelo rup">
-                                                   
-                                                </ol></li>
-                                
-                                        </ul>
-                                    </ul>
-                                        <br></br>
-                                        <br></br>
 
 
-                </div>
 
 
-             </div>
-             <br>
-             <div class="contenedor2">
-                <div class="contenedor-ajustartexto">
-                    <h1 class="titulo-centrado">Modelos de desarrollo ágil</h1>
-                                        <p>En el desarrollo ágil, se pone el énfasis en la entrega al cliente, cada poco tiempo, de
-                                            software que funcione, más que en el rigor en la ingeniería del software y en los productos
-                                            intermedios. Uno de los objetivos es la entrega rápida de software incremental y para
-                                            ello se prefiere formar equipos pequeños y bien motivados.</p>
-                                        <p>Una de las principales ventajas del desarrollo ágil es su mayor facilidad para incorporar
-                                            los cambios a lo largo del desarrollo y el menor coste que estos cambios conllevan.
-                                            Como sabemos, cuanto más tarde en el proceso de desarrollo se detecta la necesidad
-                                            de realizar un cambio, más costoso es incorporarlo.</p>
-
-                                            <img class="imagen-centrada" src="../imagenes/imagencomparación.png" alt="Imagen ciclo vida vs modelo desarrollo">
-                                        <p>La Alianza Ágil ha establecido doce principios de agilidad</p>
-                                        <ol>
-                                            <li>La máxima prioridad es satisfacer al cliente a través de la entrega rápida y continua
-                                                de software valioso.</li>
-                                            <li>Los requisitos cambiantes son bienvenidos, aun en etapas avanzadas del desarrollo,
-                                                pues, cuando hay cambios, los procesos ágiles son beneficiosos para la ventaja
-                                                competitiva del cliente.</li>
-                                            <li>Se realizan entregas frecuentes y lo más pronto que se pueda de software que funcione,
-                                                preferiblemente entre dos semanas y un par de meses.</li>
-                                            <li>Las personas responsables del negocio y las encargadas del desarrollo del software
-                                                trabajan conjuntamente, a diario y durante todo el proyecto.</li>
-                                            <li>Los proyectos son desarrollados por individuos motivados. Debe proporcionarse a
-                                                estos el entorno y el apoyo adecuados, y confiar en que harán el trabajo.</li>
-                                            <li>El método más eficiente y eficaz para comunicar información al equipo de desarrollo
-                                                y entre sus miembros es la conversación cara a cara.</li>
-                                            <li>La principal medida para progresar es un software que funcione.</li>
-                                            <li>Los procesos ágiles impulsan el desarrollo sostenible. Los promotores, las personas
-                                                que desarrollan el software y las usuarias de este deben ser capaces de mantener
-                                                un ritmo constante de forma indefinida.</li>
-                                            <li>La atención continua a la excelencia técnica y al buen diseño mejoran la agilidad.</li>
-                                            <li>Es esencial la simplicidad: el arte de maximizar la cantidad de trabajo no realizado.</li>
-                                            <li>Las mejores arquitecturas, requisitos y diseños surgen de los equipos con organización
-                                                propia.</li>
-                                            <li>El equipo reflexiona con regularidad sobre cómo ser más eficaz, para después perfeccionar
-                                                y ajustar su comportamiento en consecuencia.</li>
-                                                <img class="imagen-centrada" src="../imagenes/imagencicloincremental.png" alt="Imagen ciclo incremental">  
-
-                                        </ol>
-                                        <br></br>
-                                        <p>Seguidamente, se presentan dos modelos concretos de desarrollo ágil:</p>
-                                        <h2>Propagación extrema</h2>
-                                        <p>Los cinco valores originales de la programación extrema son la simplicidad, la comunicación,
-                                            la retroalimentación, la valentía y el respeto. A continuación, se describen brevemente
-                                            cada uno de ellos:</p>
-                                            <ul>
-                                                <li><strong>Simplicidad:</strong> se debe simplificar el diseño para agilizar el desarrollo y facilitar el
-                                                    mantenimiento. Solo se diseña de forma inmediata lo necesario. Si se tuviera que
-                                                    mejorar el diseño, siempre se puede rediseñar o realizar una refactorización con
-                                                    posterioridad.</li>
-                                                <li><strong>Comunicación:</strong> debe establecerse una comunicación cercana pero informal con el
-                                                    cliente; debe existir una retroalimentación continua y se deben evitar los documentos
-                                                    voluminosos como medio de comunicación.</li>
-                                                <li><strong>Retroalimentación:</strong> al realizar incrementos de software en cortos intervalos de tiempo,
-                                                    los cuales son mostrados al cliente una vez terminados, se obtiene una retroalimentación
-                                                    continua y frecuente, lo que evita tener que rehacer partes importantes del trabajo.
-                                                    Las pruebas son una fuente esencial de la retroalimentación.</li>
-                                                <li><strong>Valentía:</strong> cumplir con las prácticas de la programación extrema requiere valentía.
-                                                    Por ejemplo, no se debe diseñar pensando en requisitos futuros, aunque llevar esto
-                                                    a la práctica es difícil, pues la mayoría de los equipos de desarrollo de software
-                                                    suelen recibir presión para que tengan en cuenta también los requerimientos futuros.</li>
-                                                <li><strong>Respeto:</strong> el cumplimiento de los cuatro principios anteriores conlleva respeto entre
-                                                    los miembros del equipo de desarrollo y entre estos y las demás personas que participan
-                                                    en el proyecto.</li>
-                                                    <br></br>
-                                                    <p>Por otro lado, en la estructuración del proceso de desarrollo de software, se llevan a
-                                                        cabo las siguientes cuatro actividades estructurales: planificación, diseño, codificación y
-                                                        pruebas:</p>
-                                                <li><strong>Planificación:</strong></li>
-                                                <li><strong>Diseño:</strong></li>
-                                                <li><strong>Codificación:</strong> Codificación: antes de la codificación, se diseñan pruebas unitarias para cada una
-                                                    de las historias. Una vez creado el código, se aplica la prueba unitaria creada para
-                                                    proporcionar retroalimentación a las personas que lo han desarrollado.</li>
-                                                <li><strong>Pruebas:</strong> además de las pruebas unitarias que se hacen una vez creado el código,
-                                                    también se realizan continuamente pruebas de integración y validación,</li>
-                                            </ul>
-                                            <br>
-                                            <br>
-                                            <h2>Scrum</h2>
-                                            <p>Este modelo de desarrollo ágil tiene como objetivo la entrega de valor (productos) al
-                                                cliente en cortos periodos de tiempo y se basa en tres pilares: transparencia, inspección
-                                                y adaptación:</p>
-                                                <img class="imagen-centrada" src="../imagenes/imagenscum.png" alt="Imagen scrum">
-
-                </div>
-
-             </div>
-
-             
-                
 
 
-             </div>
- 
-                                        
-                                        
-                                      
-                </div>
+        <!--SEXTO APARTADO -->
+        <div class="contenedor2">
+            <div class="contenedor-ajustartexto">
+                <h1 class="titulo-centrado">El proceso unificado de Rational (RUP)</h1>
+                <p>El proceso RUP se puede describir en función de dos dimensiones:</p>
+                <ul><strong>-Dimensión temporal:</strong> se expresa en términos de ciclos, fases, iteraciones e hitos.
+                </ul>
+                <ul><strong>-Dimensión estática:</strong> se expresa en términos de actividades (activities), productos
+                    intermedios (artifacts), perfiles de trabajo o roles (workers) y flujos de trabajo
+                    (workflow).</ul>
 
-             </div>
+                <p>El ciclo de vida se divide en ciclos entendiendo estos
+                    como vueltas alrededor de una espiral, y estas, a su vez, como los periodos de tiempo
+                    en los que se trabaja sobre una versión completa del sistema. Cada ciclo se compone
+                    de cuatro fases que se realizan secuencialmente:</p>
+                <ul>
+                    <li><strong>Fase de comienzo (inception):</strong> el objetivo de esta fase es estudiar la
+                        viabilidad del
+                        sistema. Para ello, se establece el objetivo del sistema y se delimita su alcance,
+                        definiendo, además, las estimaciones de recursos y un plan de tiempos general en
+                        el que se establecen los hitos principales, las previsiones financieras, los riesgos
+                        del proyecto y los criterios para su éxito.</li>
+                    <li><strong>Fase de elaboración (elaboration):</strong> los objetivos de esta fase son analizar el
+                        dominio
+                        del problema, establecer una base de la arquitectura software, desarrollar el plan del
+                        proyecto y eliminar los riesgos más importantes.</li>
+                    <li><strong>Fase de construcción (construction):</strong> durante esta fase se desarrolla el sistema
+                        de
+                        forma iterativa e incremental hasta que esté preparado para su puesta en funcionamiento.
+                        Para cada iteración, se seleccionan algunos casos de uso (requisitos),
+                        se refina su análisis y diseño y se procede a su implementación y pruebas.</li>
+                    <li><strong>Fase de transición (transition)</strong> el propósito de esta fase es poner en
+                        funcionamiento
+                        el sistema y ponerlo a disposición de los usuarios.</li>
+                </ul>
+                <p>Cada una de las fases de RUP puede descomponerse en iteraciones. Una iteración es un
+                    periodo de tiempo en el que se realiza un conjunto completo de actividades de desarrollo.
+                    El sistema, por lo tanto, se va desarrollando incrementalmente de iteración en iteración.
+                    Una nueva iteración produce una nueva versión que proporciona al software mayor
+                    funcionalidad y es más refinada.</p>
+                <p>El proceso RUP describe los perfiles o papeles de trabajo
+                    (quién) que realizan productos intermedios (qué) como resultado de realizar un conjunto
+                    de actividades (cómo) por medio de un flujo de trabajo predefinido (cuándo). De esta
+                    forma, el RUP establece cuatro elementos de modelado principales:</p>
+                <ul>
+                    <li><strong>Perfiles o papeles de trabajo (workers):</strong> mediante el papel o rol de trabajo se
+                        define
+                        el comportamiento y la responsabilidad de una persona o un grupo de personas
+                        que trabajan como una unidad y en equipo.</li>
+                    <li><strong>Actividad (activity):</strong> es una unidad de trabajo que lleva a cabo un individuo
+                        con un
+                        rol determinado. Por ejemplo, para el papel del jefe o jefa de proyecto, una actividad
+                        podría ser planificar una iteración.</li>
+                    <li><strong>Producto intermedio (artifact):</strong> son elementos de información producidos,
+                        modificados
+                        o usados para el desarrollo del software.</li>
+                    <li><strong>Flujos de trabajo (workflows):</strong>son secuencias de actividades para producir
+                        productos
+                        intermedios. RUP define nueve flujos de trabajo agrupados en dos clases principales:
+                        <br></br>
+                        <ul>-FLUJOS DE INGENIERIA</ul>
 
-             
+                        <ol>
+                            <li><strong>Modelado del negocio (business modelling):</strong> el objetivo es entender el
+                                conjunto
+                                de procesos de negocio que aparecen dentro de la empresa como un paso
+                                previo a la recogida de requisitos del sistema que se debe desarrollar.</li>
+                            <li><strong>Requisitos (requirements):</strong> el propósito es establecer los requisitos
+                                funcionales
+                                (qué debe hacer el sistema) mediante casos de uso y los requisitos
+                                no funcionales (rendimiento, restricciones, facilidad de mantenimiento, fiabilidad,
+                                etc.).</li>
+                            <li><strong>Análisis y diseño (analysis 8: design):</strong> en esta fase se analizan los
+                                requisitos
+                                capturados anteriormente con el objeto de tener una comprensión y descripción
+                                más precisa de los mismos, se refinan y se estructuran.</li>
+                            <li><strong>Implementación (implementation):</strong> consiste en programar o implementar el
+                                sistema en términos de componentes, es decir, ficheros de código fuente,
+                                ejecutables, etcétera.</li>
+                            <li><strong>Pruebas (test):</strong>incluye crear casos de prueba (especificando qué probar
+                                y
+                                cómo realizar la prueba), realizar las pruebas y evaluar sus resultados.</li>
+                            <li><strong>Implantación (deployment):</strong>el objetivo es asegurarse de que el producto
+                                está
+                                preparado para ser suministrado al cliente, ajustar el producto de software a
+                                las necesidades del usuario y organizar su entrega y la recepción por parte
+                                del usuario.</li>
+                        </ol>
+                        <br></br>
+                        <ul>-FLUJOS DE APOYO
+                            <li><strong>Gestión de la configuración:</strong> control de cambios sobre los productos
+                                intermedios.</li>
+                            <li><strong>Gestión de proyecto:</strong> planificación del proyecto, gestión de los riesgos
+                                y monitorización
+                                del progreso del proyecto.</li>
+                            <li><strong>Entorno:</strong> cubre la infraestructura necesaria para desarrollar un
+                                sistema.</li>
+                            <img class="imagen-centrada" src="../imagenes/imagenmodelorup.png" alt="Imagen modelo rup">
+
+                        </ul>
+
+
+                </ul>
+
+                <br></br>
+                <br></br>
+
+
+            </div>
+
+
+        </div>
+        <br>
+        <div class="contenedor2">
+            <div class="contenedor-ajustartexto">
+                <h1 class="titulo-centrado">Modelos de desarrollo ágil</h1>
+                <p>En el desarrollo ágil, se pone el énfasis en la entrega al cliente, cada poco tiempo, de
+                    software que funcione, más que en el rigor en la ingeniería del software y en los productos
+                    intermedios. Uno de los objetivos es la entrega rápida de software incremental y para
+                    ello se prefiere formar equipos pequeños y bien motivados.</p>
+                <p>Una de las principales ventajas del desarrollo ágil es su mayor facilidad para incorporar
+                    los cambios a lo largo del desarrollo y el menor coste que estos cambios conllevan.
+                    Como sabemos, cuanto más tarde en el proceso de desarrollo se detecta la necesidad
+                    de realizar un cambio, más costoso es incorporarlo.</p>
+
+                <img class="imagen-centrada" src="../imagenes/imagencomparación.png"
+                    alt="Imagen ciclo vida vs modelo desarrollo">
+                <p>La Alianza Ágil ha establecido doce principios de agilidad</p>
+                <ol>
+                    <li>La máxima prioridad es satisfacer al cliente a través de la entrega rápida y continua
+                        de software valioso.</li>
+                    <li>Los requisitos cambiantes son bienvenidos, aun en etapas avanzadas del desarrollo,
+                        pues, cuando hay cambios, los procesos ágiles son beneficiosos para la ventaja
+                        competitiva del cliente.</li>
+                    <li>Se realizan entregas frecuentes y lo más pronto que se pueda de software que funcione,
+                        preferiblemente entre dos semanas y un par de meses.</li>
+                    <li>Las personas responsables del negocio y las encargadas del desarrollo del software
+                        trabajan conjuntamente, a diario y durante todo el proyecto.</li>
+                    <li>Los proyectos son desarrollados por individuos motivados. Debe proporcionarse a
+                        estos el entorno y el apoyo adecuados, y confiar en que harán el trabajo.</li>
+                    <li>El método más eficiente y eficaz para comunicar información al equipo de desarrollo
+                        y entre sus miembros es la conversación cara a cara.</li>
+                    <li>La principal medida para progresar es un software que funcione.</li>
+                    <li>Los procesos ágiles impulsan el desarrollo sostenible. Los promotores, las personas
+                        que desarrollan el software y las usuarias de este deben ser capaces de mantener
+                        un ritmo constante de forma indefinida.</li>
+                    <li>La atención continua a la excelencia técnica y al buen diseño mejoran la agilidad.</li>
+                    <li>Es esencial la simplicidad: el arte de maximizar la cantidad de trabajo no realizado.</li>
+                    <li>Las mejores arquitecturas, requisitos y diseños surgen de los equipos con organización
+                        propia.</li>
+                    <li>El equipo reflexiona con regularidad sobre cómo ser más eficaz, para después perfeccionar
+                        y ajustar su comportamiento en consecuencia.</li>
+                    <img class="imagen-centrada" src="../imagenes/imagencicloincremental.png"
+                        alt="Imagen ciclo incremental">
+
+                </ol>
+                <br></br>
+                <p>Seguidamente, se presentan dos modelos concretos de desarrollo ágil:</p>
+                <h2>Propagación extrema</h2>
+                <p>Los cinco valores originales de la programación extrema son la simplicidad, la comunicación,
+                    la retroalimentación, la valentía y el respeto. A continuación, se describen brevemente
+                    cada uno de ellos:</p>
+                <ul>
+                    <li><strong>Simplicidad:</strong> se debe simplificar el diseño para agilizar el desarrollo y
+                        facilitar el
+                        mantenimiento. Solo se diseña de forma inmediata lo necesario. Si se tuviera que
+                        mejorar el diseño, siempre se puede rediseñar o realizar una refactorización con
+                        posterioridad.</li>
+                    <li><strong>Comunicación:</strong> debe establecerse una comunicación cercana pero informal con el
+                        cliente; debe existir una retroalimentación continua y se deben evitar los documentos
+                        voluminosos como medio de comunicación.</li>
+                    <li><strong>Retroalimentación:</strong> al realizar incrementos de software en cortos intervalos de
+                        tiempo,
+                        los cuales son mostrados al cliente una vez terminados, se obtiene una retroalimentación
+                        continua y frecuente, lo que evita tener que rehacer partes importantes del trabajo.
+                        Las pruebas son una fuente esencial de la retroalimentación.</li>
+                    <li><strong>Valentía:</strong> cumplir con las prácticas de la programación extrema requiere
+                        valentía.
+                        Por ejemplo, no se debe diseñar pensando en requisitos futuros, aunque llevar esto
+                        a la práctica es difícil, pues la mayoría de los equipos de desarrollo de software
+                        suelen recibir presión para que tengan en cuenta también los requerimientos futuros.</li>
+                    <li><strong>Respeto:</strong> el cumplimiento de los cuatro principios anteriores conlleva respeto
+                        entre
+                        los miembros del equipo de desarrollo y entre estos y las demás personas que participan
+                        en el proyecto.</li>
+                    <br></br>
+                    <p>Por otro lado, en la estructuración del proceso de desarrollo de software, se llevan a
+                        cabo las siguientes cuatro actividades estructurales: planificación, diseño, codificación y
+                        pruebas:</p>
+                    <li><strong>Planificación:</strong></li>
+                    <li><strong>Diseño:</strong></li>
+                    <li><strong>Codificación:</strong> Codificación: antes de la codificación, se diseñan pruebas
+                        unitarias para cada una
+                        de las historias. Una vez creado el código, se aplica la prueba unitaria creada para
+                        proporcionar retroalimentación a las personas que lo han desarrollado.</li>
+                    <li><strong>Pruebas:</strong> además de las pruebas unitarias que se hacen una vez creado el código,
+                        también se realizan continuamente pruebas de integración y validación,</li>
+                </ul>
+                <br>
+                <br>
+                <h2>Scrum</h2>
+                <p>Este modelo de desarrollo ágil tiene como objetivo la entrega de valor (productos) al
+                    cliente en cortos periodos de tiempo y se basa en tres pilares: transparencia, inspección
+                    y adaptación:</p>
+                <img class="imagen-centrada" src="../imagenes/imagenscum.png" alt="Imagen scrum">
 
             </div>
 
         </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <!--Parte final, redes sociales, contacto, términos legales, etc-->
+
+
+
+
+    </div>
+
+
+
+
+    </div>
+
+    </div>
+
+
+
+    </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Parte final, redes sociales, contacto, términos legales, etc-->
 
     </div>
 
