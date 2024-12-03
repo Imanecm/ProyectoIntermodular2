@@ -15,9 +15,9 @@
             margin-top: 1.5em;
         }
 
-        #imgCodigoFuente {
-            width: 70%;
-            height: 70%;
+        #imgBonita {
+            width: 100%;
+            height: 100%;
             display: flex;
             padding-right: 10%;
             margin-top: 1.5em;
@@ -68,36 +68,80 @@
             <div class="contenedor-imagen">
                 <img src="../imagenes/software1.png" alt="Foto de una pantalla con codigo de desarrollo software">
             </div>
-
+            <div class="separadorDeTema"></div>
             <div class="Contenedor1-texto">
+                <h2>Hardware del ordenador</h2>
+                <p>Tendremos que hacer también referencia sobre los programas que se ejecutan en el ordenador, lo que
+                    permite realizar determinadas tareas sobre el hardware, y los datos necesarios para la ejecución
+                    de los programas. </p>
                 <p>Para el concepto de software podemos decir que es un conjunto de instrucciones, datos o programas
                     que permiten que un Sistema Informatico haga tareas especificas, es decir, es la parte intangible de
                     un S.I.
                 </p>
+                <p>Pero para hacer comprender mejor este concepto, vamos a ver las distintas partes del hardware de un
+                    ordenador, que son tres:
+                </p>
+
                 <br>
+                <div class="separadorDeTema"></div>
                 <p>Hay diferentes clasificaciones:</p>
                 <ol>
-                    <li><b>Software de sistema:</b> lo que entendemos por Sistema Operativo, ya que se gestiona y
-                        controla los recursos hardware.</li>
-                    <img src="../imagenes/softwareSistema.png" alt="Se ven distintos Sistemas Operativos">
-                    <br>
-                    <br>
-                    <li><b>Software de aplicación:</b> son “aplicaciones” que son creadas para realizar algo de manera
-                        especifica, como procesadores de texto,
-                        navegadores web, etc.</li>
-                    <img src="../imagenes/softwareAplicacion.png" alt="">
-                    <br>
-                    <br>
-                    <li><b>Software de desarrollo:</b> son las herramientas que usamos nosotros los programadores para
-                        crear, depurar y mantener otros programas,
-                        ya sean compiladores o entornos de desarrollo integrados (IDEs).</li>
+                    &emsp;<li><strong>&emsp; Unidad central de proceso (CPU):</strong> esta parte ejecuta las
+                        instrucciones
+                        que hay en un programa. Aunque las instrucciones pueden ser muy complejas, al final se traducen
+                        en operaciones aritméticas fáciles (sumas, restas, etc.) y lógicas (OR, AND, etc.) que se hacen
+                        sobre <b>bits</b>. La CPU tiene diferentes partes:
+                        <ul>
+                            &emsp;&emsp;<li><i>&emsp;&emsp;Unidad aritmético-lógica (ALU):</i> ejecuta los dos
+                                tipos de operaciones encargadas por la unidad de control con los datos que recibe, y
+                                devuelve
+                                el resultado.
+                            </li>
+                            &emsp;&emsp;<li><i>&emsp;&emsp;Unidad de control (UC):</i> recoge las instrucciones de la
+                                memoria principal y ordena su ejecución enviando señales a la ALU y a los registros
+                            </li>
+                            &emsp;&emsp;<li><i>&emsp;&emsp;Registros</i> forman el almacenamiento interno de la CPU e
+                                intervienen
+                                en la ejecución de las instrucciones. Hay varios, como pueden ser el contador de
+                                programa y el
+                                registro de instrucción.
+                            </li>
+                        </ul>
+                    </li>
+                    &emsp;<li><b>&emsp;&emsp;Memoria principal o memoria RAM: </b> tiene las instrucciones que hay que
+                        ejecutar
+                        y los datos sobre los que deben operar estas instrucciones. La CPU coge estas instrucciones de
+                        la RAM y envía órdenes
+                        necesarias para su ejecución. Es una memoria volátil, osea que, su contenido desaparece cuando
+                        se apaga el ordenador
+                    </li>
+                    &emsp;<li>&emsp;&emsp;<b>Unidad de entrada/salida</b> es la que permite la comunicación con el
+                        exterior, llevando la
+                        información a través de <b>periféricos</b> . Y estos pueden ser de varios tipos:
+                        <ul>
+                            &emsp;<li>&emsp;&emsp;<i>De entrada:</i> le dan al ordenador datos e instrucciones. Pueden
+                                ser (ratón, teclado, etc).</li>
+                            &emsp;<li>&emsp;&emsp;<i>De salida:</i> llevan la información al exterior, del ordenador al
+                                usuario. Pueden ser (pantalla, impresora, etc).</li>
+                            &emsp;<li>&emsp;&emsp;<i>De entrada/salida</i> proporcionan información al ordenador y
+                                también envían infromación del ordenador
+                                al usuario. Aquí podemos encontrar, (módem, tarjeta de red, etc). También podemos
+                                incluir los dispositivos de
+                                almacenamiento, como son (los discos duros, memorias flash, etc).</li>
+                        </ul>
+                    </li>
                 </ol>
+                <br>
+                &emsp;<img src="../imagenes/hardwareCPU.png"
+                    alt="la estructura de un ordenador consta de una CPU, y todos sus componentes como la ALU, Unidad de Control, etc">
+                <p> Para la interconexión de estos elementos, se utilizan una serie de conexiones llamadas
+                    <b>&nbsp;buses</b>&nbsp;que son representadas por flechas.</p>
             </div>
         </div>
         <!-- SEGUNDO CONTENEDOR Código fuente, objeto y ejecutable-->
         <div class="contenedor2">
             <div class="contenedor-imagen">
-                <img id="imgCodigoFuente" src="../imagenes/codigoFuente.png"
+                <img id="imgBonita" src="../imagenes/compilador-interprete-988x640.png"
                     alt="Imagen de una foto de un codigo fuente">
             </div>
             <div class="Contenedor2-texto">
@@ -142,6 +186,77 @@
                     códigos anteriores con todas las librerías para que funcione. Lo usará el usuario final para
                     interactuar con el programa.
                 </p>
+                <div class="separadorDeTema"></div>
+                <div>
+                    <p><b>Tipos de traductores</b></p>
+                    <ol>
+                        <li>
+                            <p><b>Compiladores.</b>&nbsp;Estos traductores hacen su tarea de forma global. Es un único
+                                proceso se analiza
+                                todo el código fuente, se genera el código objeto y se almacena el resultado. Si el
+                                programa fuente esta
+                                correctamente escrito esto se podrá llevar acabo, en caso de no estarlo no se generará
+                                el código. El código
+                                objeto generando como resultado de la compilación, dependiendo del tipo de compilador,
+                                se podrá ejecutar
+                                directamente o puede que se necesiten otros pasos antes de que el programa sea
+                                ejecutable, como los pasos
+                                de ensamblado, enlazado y carga. Una vez obtenido el código ejecutable, se podrá
+                                ejecutar tantas veces
+                                como se desee, sin necesidad de volverlo a compilar.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Intérpretes.</b>&nbsp;A diferencia de lo que pasa con los compiladores, estos hacen a
+                                la vez el proceso detraducción
+                                y el de ejecución. Su forma de trabajo es que, primero analizan los bloques del programa
+                                fuente, generan el código
+                                objeto y lo ejecutan, luego se repite este proceso hasta que acaba el programa. En la
+                                etapa de ejecución, se
+                                pasa el control al código objeto generado y se espera a que acabe su ejecución. Así,
+                                cada fragmento de código fuente
+                                solo se almacena provisionalmente.
+                                <br>
+                                En caso de ser lenguaje de Java, se combinan la comilación y la interpretación. El
+                                programa se compila, se genera
+                                un formato intermedio llamado bytecode y el resultado es interpretado por la máquina
+                                virutal de Java.
+                            </p>
+                        </li>
+                    </ol>
+                    <br>
+                    <p>Hay una serie de harramientas para realizar el proceso desde la generación del código fuente
+                        hasta la ejecución del programa</p>
+                    <ul>
+                        <li>
+                            <p>Para escribir código fuente se puede emplear un editor de textos simple o alguna
+                                herramienta de programación.
+                                Hay programas como Notepad++ o Sublime que nos permiten crear código fuente en
+                                diferentes lenguajes de programación
+                                facilitando así el trabajo de los programadores.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Dependiendo de si usamos un lenguaje de programación u otro, emplearemos un compilador o
+                                un interpréte.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                También puede ser que el código generado no sea ejcutable, entonces será necesario
+                                emplear un entorno de desarrollo
+                                integrado, una aplicación informática compuesta por un cojunto de herramientes que
+                                facilitan a la persona encargada
+                                de la programación su tarea y dan rapidez en la creación de programas. La mayoría de
+                                estos entornos, tienen un
+                                depurador, ( que nos ayudarán en las detenciones y correcciones de errores de
+                                programación), una herramienta de control
+                                de verisiones y un constructor de interfaz gráfica.
+                    </ul>
+                    <img src="../imagenes/traductores.png" alt="se aprecia como ha evolucionado la programación">
+                </div>
             </div>
         </div>
         <!--LENGUAJES DE PROGRAMACIÓN-->
@@ -296,7 +411,7 @@
                 <p>Las aplicaciones tambien usan diversos componentes de software, llamados módulos.
                     <br>Los módulos hacen determinadas tareas de procesamiento, para lo que requiere utilizar datos.
                 </p>
-                <p>En los módulos se van pasando los datos llamados<strong>parámetros</strong> y a veces nos devuelven
+                <p>En los módulos se van pasando los datos llamados parámetros y a veces nos devuelven
                     resultados</p>
                 <p>Hay 2 tipos de modelos que son:</p>
                 <ul class="tabulado">
@@ -557,47 +672,47 @@
         <!--Parte final, redes sociales, contacto, términos legales, etc-->
 
     </div>
-    
-        <div class="contenedorfinal">
-            <br>
-            <footer class="contenedorfinal">
-                <div class="footer-container">
-                    <div>
-                        <h2>Development Project</h2>
-                        <p>We are an Information company about computer science, more specifically about programming.
-                        </p>
-                        <div class="socials">
-                            &emsp;<a href="#">Instagram</a>
-                            <a href="#">Twitter</a>
-                            <a href="#">Gmail</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h3>Resources</h3>
-                        <a href="#">Cssbuttons.io</a><br>
-                        <a href="#">Javascript.io</a><br>
-                        <a href="#">Html.io</a><br>
-                        <a href="#">C/C++.io</a>
 
-                    </div>
-                    <div>
-                        <h3>Information</h3>
-                        <a href="#">Blog</a><br>
-                        <a href="#">Our offices</a><br>
-                        <a href="#">WorkStations</a>
-                    </div>
-                    <div>
-                        <h3>Legal</h3>
-                        <a href="#">Terms</a><br>
-                        <a href="#">Privacy</a><br>
-                        <a href="#">Cookies</a>
+    <div class="contenedorfinal">
+        <br>
+        <footer class="contenedorfinal">
+            <div class="footer-container">
+                <div>
+                    <h2>Development Project</h2>
+                    <p>We are an Information company about computer science, more specifically about programming.
+                    </p>
+                    <div class="socials">
+                        &emsp;<a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Gmail</a>
                     </div>
                 </div>
-                <p class="footer-bottom">&copy; 2024 Development Project.Inc</p>
-            </footer>
+                <div>
+                    <h3>Resources</h3>
+                    <a href="#">Cssbuttons.io</a><br>
+                    <a href="#">Javascript.io</a><br>
+                    <a href="#">Html.io</a><br>
+                    <a href="#">C/C++.io</a>
 
-        </div>
-        <script type="text/javascript" src="../java/java.js"></script>
+                </div>
+                <div>
+                    <h3>Information</h3>
+                    <a href="#">Blog</a><br>
+                    <a href="#">Our offices</a><br>
+                    <a href="#">WorkStations</a>
+                </div>
+                <div>
+                    <h3>Legal</h3>
+                    <a href="#">Terms</a><br>
+                    <a href="#">Privacy</a><br>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2024 Development Project.Inc</p>
+        </footer>
+
+    </div>
+    <script type="text/javascript" src="../java/java.js"></script>
 </body>
 
 </html>
