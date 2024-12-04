@@ -31,6 +31,7 @@ const items = document.querySelectorAll('.item');
 const dots = document.querySelectorAll('.dot');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
+
 let index = 0;
 
 // Función para actualizar el carrusel

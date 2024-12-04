@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Cambiado a flex-start para permitir desplazamiento */
+            min-height: 100vh;
+            overflow-y: auto; /* Agregado para permitir desplazamiento vertical */
+        }
+
+        .quiz-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 20px; /* Reducido ligeramente */
+            width: 100%;
+            max-width: 600px;
+            margin: 20px 10px; /* Agregado margen para que no se pegue en pantallas pequeñas */
+        }
+
+        h1 {
+            font-size: 2em; /* Reducido ligeramente */
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px; /* Reducido ligeramente */
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        .question p {
+            font-size: 1em; /* Reducido ligeramente */
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .answers label {
+            display: block;
+            background-color: #e0e0e0;
+            padding: 12px;
+            border-radius: 6px;
+            margin: 5px 0;
+            cursor: pointer;
+            font-size: 1em; /* Reducido ligeramente */
+            transition: background-color 0.3s ease;
+        }
+
+        .answers label:hover {
+            background-color: #bdbdbd;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 1em; /* Reducido ligeramente */
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .clear-button {
+            background-color: #ff9800;
+            margin-top: 10px;
+        }
+
+        .clear-button:hover {
+            background-color: #fb8c00;
+        }
+
+        .result {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .correct {
+            background-color: #81c784;
+            color: #2e7d32;
+        }
+
+        .incorrect {
+            background-color: #e57373;
+            color: #d32f2f;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em; /* Reducido ligeramente */
+            margin-top: 20px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Cuestionario</h1>
+        <form id="quiz">
+            <div class="question" id="q1-container">
+                <p>1. ¿Cuál es la capital de Francia?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q1" value="París"> París</label>
+                    <label><input type="radio" name="q1" value="Madrid"> Madrid</label>
+                    <label><input type="radio" name="q1" value="Roma"> Roma</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q1')">Quitar selección</button>
+                <div class="result" id="q1-result"></div>
+            </div>
+
+            <div class="question" id="q2-container">
+                <p>2. ¿Cuál es el resultado de 2 + 2?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q2" value="3"> 3</label>
+                    <label><input type="radio" name="q2" value="4"> 4</label>
+                    <label><input type="radio" name="q2" value="5"> 5</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q2')">Quitar selección</button>
+                <div class="result" id="q2-result"></div>
+            </div>
+
+            <div class="question" id="q3-container">
+                <p>3. ¿Qué planeta es conocido como el planeta rojo?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q3" value="Marte"> Marte</label>
+                    <label><input type="radio" name="q3" value="Venus"> Venus</label>
+                    <label><input type="radio" name="q3" value="Júpiter"> Júpiter</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q3')">Quitar selección</button>
+                <div class="result" id="q3-result"></div>
+            </div>
+
+            <div class="question" id="q4-container">
+                <p>4. ¿En qué continente se encuentra Egipto?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="África"> África</label>
+                    <label><input type="radio" name="q4" value="Asia"> Asia</label>
+                    <label><input type="radio" name="q4" value="Europa"> Europa</label>
+                </div>
+                <button type="button" class="clear-button" onclick="clearSelection('q4')">Quitar selección</button>
+                <div class="result" id="q4-result"></div>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Corregir preguntas</button>
+        </form>
+        <footer>
+            <p>Hecho por Raul, Alejandro e Imen</p>
+        </footer>
+    </div>
+
+    <script>
+        function clearSelection(questionName) {
+            const radios = document.getElementsByName(questionName);
+            radios.forEach(radio => radio.checked = false);
+        }
+
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: "París",
+                q2: "4",
+                q3: "Marte",
+                q4: "África"
+            };
+
+            Object.keys(correctAnswers).forEach(question => {
+                const resultDiv = document.getElementById(`${question}-result`);
+                const selected = document.querySelector(`input[name="${question}"]:checked`);
+
+                if (selected) {
+                    if (selected.value === correctAnswers[question]) {
+                        resultDiv.textContent = "Correcto ✅";
+                        resultDiv.className = "result correct";
+                    } else {
+                        resultDiv.textContent = "Incorrecto ❌";
+                        resultDiv.className = "result incorrect";
+                    }
+                } else {
+                    resultDiv.textContent = "No has seleccionado una respuesta ❌";
+                    resultDiv.className = "result incorrect";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
